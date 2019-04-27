@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
-import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { FlagsComponent } from './flags/flags.component';
@@ -12,12 +11,7 @@ import { ArrivalComponent } from './arrival/arrival.component';
 import { DepartureComponent } from './departure/departure.component';
 import { PrintComponent } from './print/print.component';
 import { FlagComponent } from './flag/flag.component';
-
-const appRoutes: Routes = [
-  { path: '', component: FlagsComponent },
-  { path: 'flags', component: FlagsComponent },
-  { path: 'safety', component: SafetyComponent }
-];
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -29,9 +23,10 @@ const appRoutes: Routes = [
     ArrivalComponent,
     DepartureComponent,
     PrintComponent,
-    FlagComponent
+    FlagComponent,
+    NavComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
