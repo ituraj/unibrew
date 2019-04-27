@@ -11,7 +11,17 @@ import { ArrivalComponent } from './arrival/arrival.component';
 import { DepartureComponent } from './departure/departure.component';
 import { PrintComponent } from './print/print.component';
 import { FlagComponent } from './flag/flag.component';
-import { NavComponent } from './nav/nav.component';
+
+// Translations
+
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+// AoT requires an exported function for factories
+export function HttpLoaderFactory(httpClient: HttpClient) {
+  return new TranslateHttpLoader(httpClient);
+}
 
 @NgModule({
   declarations: [
@@ -23,10 +33,20 @@ import { NavComponent } from './nav/nav.component';
     ArrivalComponent,
     DepartureComponent,
     PrintComponent,
-    FlagComponent,
-    NavComponent
+    FlagComponent
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

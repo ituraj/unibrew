@@ -1,5 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
 
 *,
@@ -22,4 +20,26 @@ body {
   color: #474747;
   box-sizing: border-box;
   cursor: default;
+}
+
+h1,
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #474747;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #474747;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #474747;
 }

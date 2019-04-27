@@ -1,0 +1,12 @@
+{
+  "safety": "Safety Rules",
+  "transport": "Transportation Number",
+  "arrival": "Arrival",
+  "departure": "Departure",
+  "empty": "Empty Trailer",
+  "return": "Returning Goods",
+  "load": "Load",
+  "collect": "Collect Loaded",
+  "thanks": "Thank You",
+  "print": "Printing..."
+}

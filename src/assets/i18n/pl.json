@@ -1,0 +1,12 @@
+{
+  "safety": "Zasady Bezpieczeństwa",
+  "transport": "Numer Transportu",
+  "arrival": "Przyjazd",
+  "departure": "Odjazd",
+  "empty": "Pusta Naczepa",
+  "return": "Zwrot Towaru",
+  "load": "Do Załadunku",
+  "collect": "Odbierz Załadowane",
+  "thanks": "Dziękujemy",
+  "print": "Drukowanie Formy..."
+}

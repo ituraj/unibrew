@@ -1,5 +1,66 @@
-<main class="flags-main">
+<!-- <main class="flags-main">
   <ng-container *ngFor="let language of languages">
     <app-flag [data]="language"></app-flag>
   </ng-container>
+</main>
+<div> -->
+<main class="flags-main">
+  <a
+    (click)="switchLanguage('dk')"
+    routerLink="/step-one"
+    class="flags-container"
+  >
+    <img class="flag" src="../../assets/svg/da.svg" alt="Danish flag" />
+    <h3>
+      Dansk
+    </h3>
+  </a>
+  <a
+    (click)="switchLanguage('en')"
+    routerLink="/step-one"
+    class="flags-container"
+  >
+    <img class="flag" src="../../assets/svg/en.svg" alt="British flag" />
+    <h3>
+      English
+    </h3>
+  </a>
+  <a
+    (click)="switchLanguage('de')"
+    routerLink="/step-one"
+    class="flags-container"
+  >
+    <img class="flag" src="../../assets/svg/de.svg" alt="German flag" />
+    <h3>
+      Deutsch
+    </h3>
+  </a>
+  <a
+    (click)="switchLanguage('pl')"
+    routerLink="/step-one"
+    class="flags-container"
+  >
+    <img class="flag" src="../../assets/svg/pl.svg" alt="Polish flag" />
+    <h3>
+      Polski
+    </h3>
+  </a>
+  <a
+    (click)="switchLanguage('ro')"
+    routerLink="/step-one"
+    class="flags-container"
+  >
+    <img class="flag" src="../../assets/svg/ro.svg" alt="Romanian flag" />
+
+    <h3>Românesc</h3>
+  </a>
+  <a
+    (click)="switchLanguage('bg')"
+    routerLink="/step-one"
+    class="flags-container"
+  >
+    <img class="flag" src="../../assets/svg/bg.svg" alt="Bulgarian flag" />
+
+    <h3>български</h3>
+  </a>
 </main>

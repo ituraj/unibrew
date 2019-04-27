@@ -44,7 +44,7 @@
 }
 
 .safety-item {
-  max-width: 6rem;
+  max-width: 8rem;
   height: auto;
 }
 
@@ -78,6 +78,7 @@
 
 .tick,
 .cross {
-  margin: 0.2rem;
-  padding: 0.5rem;
+  max-width: 5rem;
+  margin: 1rem;
+  padding: 1rem 0.5rem;
 }

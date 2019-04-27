@@ -10,3 +10,27 @@
   grid-gap: 3rem;
   margin: 5rem 15rem 0 15rem;
 }
+
+.flags-main h3 {
+  margin-top: 2rem;
+}
+
+.flags-container {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.flag {
+  max-width: 16rem;
+  max-height: 12rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.flag-label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem 0 0 0;
+  color: #474747;
+}

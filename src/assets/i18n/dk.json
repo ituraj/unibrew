@@ -1,0 +1,12 @@
+{
+  "safety": "Sikkerhedsregler",
+  "transport": "Transportnummer",
+  "arrival": "Ankomst",
+  "departure": "Afgang",
+  "empty": "Tøm Trailer",
+  "return": "Returvarer",
+  "load": "Load",
+  "collect": "Saml indlæst",
+  "thanks": "Mange Tak",
+  "print": "Udskrivning ..."
+}

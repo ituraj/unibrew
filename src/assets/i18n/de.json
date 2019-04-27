@@ -1,0 +1,12 @@
+{
+  "safety": "Sicherheitsregeln",
+  "transport": "Transportnummer",
+  "arrival": "Ankunft",
+  "departure": "Abfahrt",
+  "empty": "Leerer Trailer",
+  "return": "Waren Zurücksenden",
+  "load": "Laden",
+  "collect": "Sammeln Geladen",
+  "thanks": "Vielen Dank",
+  "print": "Drucken..."
+}
