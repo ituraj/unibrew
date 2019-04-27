@@ -1,0 +1,71 @@
+.title,
+.worker,
+.safety-items {
+  justify-self: center;
+  align-self: center;
+}
+
+.title {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #25ae88;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.worker {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin: 2rem;
+}
+
+.worker img {
+  height: 40vh;
+}
+
+.safety-items {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: flex;
+}
+
+.safety-item {
+  max-width: 6rem;
+  height: auto;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.arrow-back,
+.arrow-next {
+  justify-self: center;
+  align-self: center;
+}
+
+.arrow-back img,
+.arrow-next img {
+  max-width: 5rem;
+}
+
+.arrow-back {
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+
+.arrow-next {
+  grid-column: 3/4;
+  grid-row: 1/4;
+}
+
+.tick,
+.cross {
+  margin: 0.2rem;
+  padding: 0.5rem;
+}
