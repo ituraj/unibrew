@@ -12,12 +12,12 @@ import { PrintComponent } from './print/print.component';
 const routes: Routes = [
   { path: '', component: FlagsComponent },
   { path: 'flags', component: FlagsComponent },
-  { path: 'step-one', component: SafetyComponent },
-  { path: 'step-two', component: TransportNumberComponent },
-  { path: 'step-three', component: ArrivalDepartureComponent },
-  { path: 'step-four-a', component: ArrivalComponent },
-  { path: 'step-four-b', component: DepartureComponent },
-  { path: 'step-five', component: PrintComponent }
+  { path: 'safety-rules', component: SafetyComponent },
+  { path: 'transport-number', component: TransportNumberComponent },
+  { path: 'arrival-departure', component: ArrivalDepartureComponent },
+  { path: 'arrival', component: ArrivalComponent },
+  { path: 'departure', component: DepartureComponent },
+  { path: 'print', component: PrintComponent }
 ];
 
 @NgModule({

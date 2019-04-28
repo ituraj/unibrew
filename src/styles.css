@@ -1,45 +1,105 @@
+/*--------------- GLOBAL STYLES ----------------- */
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
 
+/* ---------------- SIMPLE RESET ---------------- */
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  border: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  font-family: 'Montserrat', Helvetica, Arial, Verdana, Tahoma;
 }
 
 html {
   font-size: 62.5%;
+  height: 100%;
+  width: 100%;
 }
+
+button,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  cursor: pointer;
+}
+
+/* -------------- GENERAL STYLES ---------------- */
 
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.5;
   background-color: #efefef;
   color: #474747;
   box-sizing: border-box;
   cursor: default;
+  text-transform: uppercase;
 }
-
+/*--------------- TYPOGRAPHY ----------------- */
 h1,
 h2 {
-  font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #474747;
+  letter-spacing: 0.2rem;
+  color: #25ae88;
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   font-weight: 700;
+  letter-spacing: 0.1rem;
   color: #474747;
 }
 
 p {
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
+  line-height: 1.5;
   color: #474747;
+}
+
+/*--------------- BUTTONS ----------------- */
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  background-image: none;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.button {
+  color: #efefef;
+  background-color: #25ae88;
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  border-radius: 2.5rem;
+  padding: 1.5rem 6rem;
+}
+
+.arrow {
+  height: 7.5rem;
+}
+/*--------------- MAIN ----------------- */
+main {
+  padding: 7.5rem 7.5rem;
 }

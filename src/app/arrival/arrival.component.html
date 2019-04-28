@@ -1,25 +1,29 @@
-<div class="arrival-container">
-  <h2 class="title">{{ 'arrival' | translate }}</h2>
-  <div class="empty">
+<section class="arrival-container">
+  <h2>{{ 'arrival' | translate }}</h2>
+  <article class="arrival">
     <h3>{{ 'empty' | translate }}</h3>
-    <img src="../../assets/svg/trailerEmpty.svg" alt="empty trailer" />
+    <a routerLink="/print">
+      <img src="../../assets/svg/trailerEmpty.svg" alt="empty trailer" />
+    </a>
     <div class="confirm">
       <img src="../../assets/svg/yes.svg" alt="yes" class="tick" />
       <img src="../../assets/svg/no.svg" alt="no" class="cross" />
     </div>
-  </div>
-  <div class="returning-goods">
+  </article>
+  <article class="arrival">
     <h3>{{ 'return' | translate }}</h3>
-    <img src="../../assets/svg/returningGoods.svg" alt="returning goods" />
+    <a routerLink="/print">
+      <img src="../../assets/svg/returningGoods.svg" alt="returning goods" />
+    </a>
     <div class="confirm">
       <img src="../../assets/svg/yes.svg" alt="yes" class="tick" />
       <img src="../../assets/svg/no.svg" alt="no" class="cross" />
     </div>
-  </div>
-  <div class="arrow-back" routerLink="/step-three">
-    <img src="../../assets/svg/back.svg" alt="arrow back" />
-  </div>
-  <div class="arrow-next" routerLink="/step-five">
-    <img src="../../assets/svg/next.svg" alt="arrow back" />
-  </div>
-</div>
+  </article>
+  <button routerLink="/arrival-departure">
+    <img class="arrow" src="../../assets/svg/back.svg" alt="arrow back" />
+  </button>
+  <button routerLink="/print">
+    <img class="arrow" src="../../assets/svg/next.svg" alt="arrow next" />
+  </button>
+</section>

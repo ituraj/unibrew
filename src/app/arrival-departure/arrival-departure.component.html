@@ -1,18 +1,26 @@
-<div class="warehouse-container">
-  <div class="warehouse">
+<section class="warehouse-container">
+  <div class="warehouse-img">
     <img src="../../assets/svg/warehouse.svg" alt="warehouse" />
   </div>
-  <div class="warehouse-arrival">
-    <img src="../../assets/svg/truckArriving.svg" alt="truck arriving" />
-    <button routerLink="/step-four-a">{{ 'arrival' | translate }}</button>
-  </div>
+  <article class="warehouse">
+    <a routerLink="/arrival">
+      <img src="../../assets/svg/truckArriving.svg" alt="truck arriving" />
+    </a>
+    <button class="button" routerLink="/arrival">
+      {{ 'arrival' | translate }}
+    </button>
+  </article>
 
-  <div class="warehouse-departure">
-    <img src="../../assets/svg/truckLeaving.svg" alt="truck leaving" />
-    <button routerLink="/step-four-b">{{ 'departure' | translate }}</button>
-  </div>
+  <article class="warehouse">
+    <a routerLink="/departure">
+      <img src="../../assets/svg/truckLeaving.svg" alt="truck leaving" />
+    </a>
+    <button class="button" routerLink="/departure">
+      {{ 'departure' | translate }}
+    </button>
+  </article>
 
-  <div class="arrow-back" routerLink="/step-two">
-    <img src="../../assets/svg/back.svg" alt="arrow back" />
-  </div>
-</div>
+  <button routerLink="/transport-number">
+    <img class="arrow" src="../../assets/svg/back.svg" alt="arrow back" />
+  </button>
+</section>

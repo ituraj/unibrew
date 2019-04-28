@@ -1,5 +1,5 @@
-<div class="safety-container">
-  <h2 class="title">{{ 'safety' | translate }}</h2>
+<section class="safety-container">
+  <h2>{{ 'safety' | translate }}</h2>
   <div class="worker">
     <img src="../../assets/svg/worker.svg" alt="worker" />
   </div>
@@ -55,10 +55,10 @@
       </div>
     </div>
   </div>
-  <div class="arrow-back" routerLink="/">
-    <img src="../../assets/svg/back.svg" alt="arrow back" />
-  </div>
-  <div class="arrow-next" routerLink="/step-two">
-    <img src="../../assets/svg/next.svg" alt="arrow next" />
-  </div>
-</div>
+  <button routerLink="/">
+    <img class="arrow" src="../../assets/svg/back.svg" alt="arrow back" />
+  </button>
+  <button routerLink="/transport-number">
+    <img class="arrow" src="../../assets/svg/next.svg" alt="arrow next" />
+  </button>
+</section>
