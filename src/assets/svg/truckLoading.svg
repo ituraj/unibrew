@@ -1,4 +1,25 @@
 <svg width="463" height="100" viewBox="0 0 463 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+
+#package {
+  animation: lift 4s infinite;
+}
+@keyframes lift {
+  0% {
+    transform: translate(0, 0px);
+  }
+  75% {
+    opacity: 1;
+    transform: translate(0, -30px);
+  }
+  100% {
+    transform: translate(0, -30px);
+    opacity: 0;
+  }
+}
+
+
+</style>
 <g id="truckLoading">
 <g id="Truck">
 <path id="Vector" d="M356.329 96.604H9.06494V100H356.329V96.604Z" fill="#DBDCDD"/>
