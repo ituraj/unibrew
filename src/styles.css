@@ -30,6 +30,11 @@ a:hover,
 a:active {
   cursor: pointer;
 }
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 /* -------------- GENERAL STYLES ---------------- */
 
@@ -46,7 +51,7 @@ body {
 /*--------------- TYPOGRAPHY ----------------- */
 h1,
 h2 {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
   color: #25ae88;
@@ -57,13 +62,21 @@ h3 {
   font-weight: 700;
   letter-spacing: 0.1rem;
   color: #474747;
+  padding: 0.5rem 0rem;
 }
 
-p {
+p,
+input {
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   color: #474747;
+  text-align: center;
+}
+
+input {
+  font-size: 2.5rem;
+  line-height: 2;
 }
 
 /*--------------- BUTTONS ----------------- */
@@ -97,9 +110,79 @@ button {
 }
 
 .arrow {
+  font-size: 5rem;
+  font-weight: 300;
   height: 7.5rem;
+  width: 7.5rem;
+  color: #efefef;
+  border-radius: 50%;
+  background-color: #25ae88;
+  align-self: center;
 }
+/* This we need to code so arrow will be dissable - for testing I just make dissable */
+.arrow:hover {
+  background-color: #d5d3d2;
+}
+.back {
+  transform: rotate(180deg);
+}
+.tick,
+.cross {
+  font-size: 2rem;
+  color: #efefef;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.tick {
+  background-color: #25ae88;
+}
+.cross {
+  background-color: #d75a4a;
+}
+
 /*--------------- MAIN ----------------- */
 main {
+  height: 100vh;
   padding: 7.5rem 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*--------------- SECTION ----------------- */
+
+.section {
+  display: grid;
+  width: calc(100vw - 15rem);
+  height: calc(100vh - 15rem);
+  grid-template-columns: max-content auto max-content;
+}
+
+.article,
+.article-secondary {
+  height: calc(100vh - 15rem);
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-gap: 4rem;
+  grid-template-rows: repeat(3, max-content);
+}
+.article-secondary {
+  grid-template-rows: repeat(2, max-content);
+}
+
+/*----------------- INPUT ------------------------- */
+input {
+  padding: 0.8rem 10rem;
+  border: 3px solid #c4c4c4;
+  border-radius: 10rem;
+  color: #25ae88;
+}
+
+input:focus {
+  border: 3px solid #25ae88;
+}
+input::placeholder {
+  opacity: 0.7;
 }

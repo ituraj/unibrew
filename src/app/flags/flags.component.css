@@ -1,0 +1,5 @@
+.flags-container {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-gap: 4rem 8rem;
+}

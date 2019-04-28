@@ -1,0 +1,12 @@
+.departures-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+}
+
+.departure {
+  display: grid;
+  justify-items: center;
+  grid-template-rows: repeat(3, max-content);
+  grid-gap: 1rem;
+}

@@ -1,12 +1,12 @@
-<section class="transport-container">
-  <h2>{{ 'transport' | translate }}</h2>
-  <div class="input-group">
-    <input type="number" />
-    <button class="button">Submit</button>
-  </div>
+<section class="section">
   <button routerLink="/safety-rules">
     <img class="arrow" src="../../assets/svg/back.svg" alt="arrow back" />
   </button>
+  <article class="article">
+    <h2>{{ 'transport' | translate }}</h2>
+    <input type="number" maxlength="10" placeholder="4449 9494 999" />
+    <button class="button">Submit</button>
+  </article>
   <button routerLink="/arrival-departure">
     <img class="arrow" src="../../assets/svg/next.svg" alt="arrow next" />
   </button>
