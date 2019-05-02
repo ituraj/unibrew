@@ -1,6 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.module';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { FormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+// Environments
+
+import { environment } from 'src/environments/environment';
+
+// Services
+
+import { DriverService } from './shared/driver.service';
+
+// Components
 
 import { AppComponent } from './app.component';
 import { FlagsComponent } from './flags/flags.component';
@@ -11,10 +24,25 @@ import { ArrivalComponent } from './arrival/arrival.component';
 import { DepartureComponent } from './departure/departure.component';
 import { PrintComponent } from './print/print.component';
 import { FlagComponent } from './flag/flag.component';
+import { SecondaryFormComponent } from './secondary-form/secondary-form.component';
+import { DriverListComponent } from './secondary-form/driver-list/driver-list.component';
+import { DriverComponent } from './secondary-form/driver/driver.component';
+
+// Routing
+
+import { AppRoutingModule } from './app-routing.module';
+
+// Animations
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+
+// Font Awesome
+
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 // Translations
 
-import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
@@ -33,11 +61,20 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     ArrivalComponent,
     DepartureComponent,
     PrintComponent,
-    FlagComponent
+    FlagComponent,
+    SecondaryFormComponent,
+    DriverListComponent,
+    DriverComponent
   ],
   imports: [
     BrowserModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
     AppRoutingModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
+    FontAwesomeModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
@@ -47,7 +84,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
       }
     })
   ],
-  providers: [],
+  providers: [DriverService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
