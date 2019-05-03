@@ -1,6 +1,9 @@
 export class Driver {
   id: string;
-  fullName: string;
+  companyName: string;
   trailerNumber: string;
-  mobile: string;
+  arrivalTime: string;
+  transportNumber: string;
+  destination: string;
+  fullName: string;
 }

@@ -1,15 +1,25 @@
 <table class="table table-hover">
   <thead>
-    <th>Name</th>
-    <th>Trailer</th>
-    <th>Mobile</th>
-    <th></th>
+    <th>Company Name</th>
+    <th>Trailer Number</th>
+    <th>Arrival Time</th>
+    <th>Transport Number</th>
+    <th>Destination</th>
+    <th>Full Name</th>
+    <th>Edit</th>
+    <th>Delete</th>
   </thead>
   <tbody>
     <tr *ngFor="let driver of list">
-      <td (click)="onEdit(driver)">{{ driver.fullName }}</td>
+      <td (click)="onEdit(driver)">{{ driver.companyName }}</td>
       <td (click)="onEdit(driver)">{{ driver.trailerNumber }}</td>
-      <td (click)="onEdit(driver)">{{ driver.mobile }}</td>
+      <td (click)="onEdit(driver)">{{ driver.arrivalTime }}</td>
+      <td (click)="onEdit(driver)">{{ driver.transportNumber }}</td>
+      <td (click)="onEdit(driver)">{{ driver.destination }}</td>
+      <td (click)="onEdit(driver)">{{ driver.fullName }}</td>
+      <td (click)="onEdit(driver)">
+        <fa-icon [icon]="faTrash" class="text-success"></fa-icon>
+      </td>
       <td (click)="onDelete(driver.id)">
         <fa-icon [icon]="faTrash" class="text-danger"></fa-icon>
       </td>

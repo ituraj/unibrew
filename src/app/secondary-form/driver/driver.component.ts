@@ -26,9 +26,12 @@ export class DriverComponent implements OnInit {
     }
     this.service.formData = {
       id: null,
-      fullName: '',
+      companyName: '',
       trailerNumber: '',
-      mobile: ''
+      arrivalTime: '',
+      transportNumber: '',
+      destination: '',
+      fullName: ''
     };
   }
 
