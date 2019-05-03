@@ -36,6 +36,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { MatCardModule } from '@angular/material';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 // Font Awesome
 
@@ -45,6 +47,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { DragDropComponent } from './drag-drop/drag-drop.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -64,7 +67,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     FlagComponent,
     SecondaryFormComponent,
     DriverListComponent,
-    DriverComponent
+    DriverComponent,
+    DragDropComponent
   ],
   imports: [
     BrowserModule,
@@ -74,6 +78,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     FormsModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
+    MatCardModule,
+    DragDropModule,
     FontAwesomeModule,
     HttpClientModule,
     TranslateModule.forRoot({
