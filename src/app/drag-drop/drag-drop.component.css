@@ -1,0 +1,9 @@
+.drag-drop {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-gap: 4rem;
+}
+
+.card {
+  margin: 1rem 0;
+}
