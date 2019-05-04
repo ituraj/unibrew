@@ -50,6 +50,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { ResultComponent } from './result/result.component';
+import { QuizIntroComponent } from './quiz-intro/quiz-intro.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -72,7 +73,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     DriverComponent,
     DragDropComponent,
     QuizComponent,
-    ResultComponent
+    ResultComponent,
+    QuizIntroComponent
   ],
   imports: [
     BrowserModule,

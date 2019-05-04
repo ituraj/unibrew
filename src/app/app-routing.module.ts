@@ -10,6 +10,7 @@ import { DepartureComponent } from './departure/departure.component';
 import { PrintComponent } from './print/print.component';
 import { SecondaryFormComponent } from './secondary-form/secondary-form.component';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
+import { QuizIntroComponent } from './quiz-intro/quiz-intro.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { ResultComponent } from './result/result.component';
 
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'print', component: PrintComponent },
   { path: 'drivers-register', component: SecondaryFormComponent },
   { path: 'workplace-safety', component: DragDropComponent },
+  { path: 'quiz-intro', component: QuizIntroComponent },
   { path: 'quiz', component: QuizComponent },
   { path: 'result', component: ResultComponent }
 ];
