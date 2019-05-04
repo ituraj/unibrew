@@ -10,6 +10,8 @@ import { DepartureComponent } from './departure/departure.component';
 import { PrintComponent } from './print/print.component';
 import { SecondaryFormComponent } from './secondary-form/secondary-form.component';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
+import { QuizComponent } from './quiz/quiz.component';
+import { ResultComponent } from './result/result.component';
 
 const routes: Routes = [
   { path: '', component: FlagsComponent },
@@ -21,7 +23,9 @@ const routes: Routes = [
   { path: 'departure', component: DepartureComponent },
   { path: 'print', component: PrintComponent },
   { path: 'drivers-register', component: SecondaryFormComponent },
-  { path: 'workplace-safety', component: DragDropComponent }
+  { path: 'workplace-safety', component: DragDropComponent },
+  { path: 'quiz', component: QuizComponent },
+  { path: 'result', component: ResultComponent }
 ];
 
 @NgModule({

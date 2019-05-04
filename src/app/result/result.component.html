@@ -1,0 +1,53 @@
+<div class="row">
+  <div class="col s8 offset-s2">
+    <h2 class="header">Completed!</h2>
+    <div class="card horizontal">
+      <div class="card-stacked">
+        <div class="card-content">
+          <h3>{{ quizService.getResult() }}/7</h3>
+        </div>
+        <div class="card-action">
+          <!--<button class="btn" (click)="OnSubmit()">Submit</button>-->
+        </div>
+      </div>
+      <a
+        class="btn-floating halfway-fab waves-effect waves-light red"
+        (click)="restart()"
+      >
+        <i class="material-icons">replay</i>
+      </a>
+    </div>
+    <h3>Your answers</h3>
+    <ng-container *ngFor="let question of quizService.questions; let i = index">
+      <div class="card light-blue darken-2">
+        <div class="card-content white-text">
+          <span class="card-title">{{ i + 1 }}</span>
+          <p>{{ question.getQuestion() }}</p>
+        </div>
+        <div class="card-action">
+          <ul class="collection">
+            <ng-container *ngFor="let option of question.getAnswers()">
+              <li *ngIf="option != null" class="collection-item">
+                {{ option }}
+                <span
+                  class="badge"
+                  *ngIf="question.getCorrectAnswer() == option"
+                >
+                  <i class="material-icons green-text">check_circle</i>
+                </span>
+                <span
+                  class="badge red-text"
+                  *ngIf="
+                    question.getUserAnswer() == option &&
+                    question.getCorrectAnswer() != option
+                  "
+                  >Incorrect</span
+                >
+              </li>
+            </ng-container>
+          </ul>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

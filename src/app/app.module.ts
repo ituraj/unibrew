@@ -48,6 +48,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
+import { QuizComponent } from './quiz/quiz.component';
+import { ResultComponent } from './result/result.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -68,7 +70,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     SecondaryFormComponent,
     DriverListComponent,
     DriverComponent,
-    DragDropComponent
+    DragDropComponent,
+    QuizComponent,
+    ResultComponent
   ],
   imports: [
     BrowserModule,
