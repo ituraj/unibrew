@@ -15,51 +15,63 @@ export class DragDropComponent {
   all = [
     {
       name: 'Safety Glasses',
-      category: 'mandatory'
+      category: 'mandatory',
+      img: '../../assets/svg/glasses.svg'
     },
     {
       name: 'Smoking',
-      category: 'prohibited'
+      category: 'prohibited',
+      img: '../../assets/svg/smoking.svg'
     },
     {
       name: 'Headphones',
-      category: 'mandatory'
+      category: 'mandatory',
+      img: '../../assets/svg/headphones.svg'
     },
     {
       name: 'Alcohol',
-      category: 'prohibited'
+      category: 'prohibited',
+      img: '../../assets/svg/alcohol.svg'
     },
     {
       name: 'Helmet',
-      category: 'mandatory'
+      category: 'mandatory',
+      img: '../../assets/svg/helmet.svg'
     },
     {
       name: 'Running',
-      category: 'prohibited'
+      category: 'prohibited',
+      img: '../../assets/svg/running.svg'
     },
     {
       name: 'Face Mask',
-      category: 'mandatory'
+      category: 'mandatory',
+      img: '../../assets/svg/mask.svg'
     },
     {
       name: 'Drugs',
-      category: 'prohibited'
+      category: 'prohibited',
+      img: '../../assets/svg/drugs.svg'
     },
     {
       name: 'Safety boots',
-      category: 'mandatory'
+      category: 'mandatory',
+      img: '../../assets/svg/shoes.svg'
     },
     {
       name: 'Explosives',
-      category: 'prohibited'
+      category: 'prohibited',
+      img: '../../assets/svg/explosives.svg'
     },
     {
       name: 'Yellow Vest',
-      category: 'mandatory'
+      category: 'mandatory',
+      img: '../../assets/svg/vest.svg'
     },
     {
       name: 'Animals',
-      category: 'prohibited'
+      category: 'prohibited',
+      img: '../../assets/svg/animals.svg'
     }
   ];
 

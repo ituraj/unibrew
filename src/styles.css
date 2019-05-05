@@ -63,15 +63,20 @@ h2 {
 }
 
 h3,
-h4 {
+h4,
+h5 {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
   color: #474747;
   padding: 0.5rem 0rem;
 }
-h4 {
+h4,
+h5 {
   color: #25ae88;
+}
+h5 {
+  text-align: center;
 }
 /*--------------- BUTTONS ----------------- */
 
@@ -119,21 +124,6 @@ button {
 }
 .back {
   transform: rotate(180deg);
-}
-.tick,
-.cross {
-  font-size: 2rem;
-  color: #efefef;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-}
-
-.tick {
-  background-color: #25ae88;
-}
-.cross {
-  background-color: #d75a4a;
 }
 
 /*--------------- MAIN ----------------- */
@@ -195,4 +185,16 @@ div.validation-error {
 
 .material-icons {
   font-size: 2rem;
+  cursor: pointer;
+}
+div.confirm .material-icons {
+  color: #d5d3d2;
+  font-size: 5rem;
+}
+div.confirm .material-icons:hover {
+  color: #25ae88;
+}
+
+div.confirm .material-icons:nth-child(2):hover {
+  color: #d75a4a;
 }

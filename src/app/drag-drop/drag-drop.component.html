@@ -1,65 +1,55 @@
-<section class="section drag-drop">
-  <div
-    class="list"
-    cdkDropList
-    #mandatoryList="cdkDropList"
-    [cdkDropListData]="mandatory"
-    [cdkDropListConnectedTo]="[allList, mandatoryList, prohibitedList]"
-    (cdkDropListDropped)="onDrop($event)"
-    [cdkDropListEnterPredicate]="mandatoryPredicate"
-  >
-    <h3>Mandatory:</h3>
-    <mat-card
-      *ngFor="let item of mandatory"
-      [cdkDragData]="item.category"
-      class="card"
-      cdkDrag
+<article class="drag-drop">
+  <section>
+    <h5>Mandatory:</h5>
+    <div
+      class="drop-area"
+      cdkDropList
+      #mandatoryList="cdkDropList"
+      [cdkDropListData]="mandatory"
+      [cdkDropListConnectedTo]="[allList, mandatoryList, prohibitedList]"
+      (cdkDropListDropped)="onDrop($event)"
+      [cdkDropListEnterPredicate]="mandatoryPredicate"
     >
-      <mat-card-header>
-        <mat-card-title>{{ item.name }}</mat-card-title>
-      </mat-card-header>
-    </mat-card>
-  </div>
-  <div
-    class="list"
-    cdkDropList
-    #allList="cdkDropList"
-    [cdkDropListData]="all"
-    [cdkDropListConnectedTo]="[allList, mandatoryList, prohibitedList]"
-    (cdkDropListDropped)="onDrop($event)"
-    [cdkDropListEnterPredicate]="noReturnPredicate"
-  >
-    <h3>All items:</h3>
-    <mat-card
-      *ngFor="let item of all"
-      [cdkDragData]="item.category"
-      class="card"
-      cdkDrag
+      <div *ngFor="let item of mandatory" [cdkDragData]="item.category" cdkDrag>
+        <img class="icon-drag" src="{{ item.img }}" alt="{{ item.name }}" />
+      </div>
+    </div>
+  </section>
+  <section>
+    <h5 class="title">All items:</h5>
+    <div
+      class="list"
+      cdkDropList
+      #allList="cdkDropList"
+      [cdkDropListData]="all"
+      [cdkDropListConnectedTo]="[allList, mandatoryList, prohibitedList]"
+      (cdkDropListDropped)="onDrop($event)"
+      [cdkDropListEnterPredicate]="noReturnPredicate"
     >
-      <mat-card-header>
-        <mat-card-title>{{ item.name }}</mat-card-title>
-      </mat-card-header>
-    </mat-card>
-  </div>
-  <div
-    class="list"
-    cdkDropList
-    #prohibitedList="cdkDropList"
-    [cdkDropListData]="prohibited"
-    [cdkDropListConnectedTo]="[allList, mandatoryList, prohibitedList]"
-    (cdkDropListDropped)="onDrop($event)"
-    [cdkDropListEnterPredicate]="prohibitedPredicate"
-  >
-    <h3>Prohibited:</h3>
-    <mat-card
-      *ngFor="let item of prohibited"
-      [cdkDragData]="item.category"
-      class="card"
-      cdkDrag
+      <div *ngFor="let item of all" [cdkDragData]="item.category" cdkDrag>
+        <img class="icon-drag" src="{{ item.img }}" alt="{{ item.name }}" />
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h5>Prohibited:</h5>
+    <div
+      class="drop-area"
+      cdkDropList
+      #prohibitedList="cdkDropList"
+      [cdkDropListData]="prohibited"
+      [cdkDropListConnectedTo]="[allList, mandatoryList, prohibitedList]"
+      (cdkDropListDropped)="onDrop($event)"
+      [cdkDropListEnterPredicate]="prohibitedPredicate"
     >
-      <mat-card-header>
-        <mat-card-title>{{ item.name }}</mat-card-title>
-      </mat-card-header>
-    </mat-card>
-  </div>
-</section>
+      <div
+        *ngFor="let item of prohibited"
+        [cdkDragData]="item.category"
+        cdkDrag
+      >
+        <img class="icon-drag" src="{{ item.img }}" alt="{{ item.name }}" />
+      </div>
+    </div>
+  </section>
+</article>
