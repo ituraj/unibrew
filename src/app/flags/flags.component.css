@@ -3,3 +3,17 @@
   grid-template-columns: repeat(3, max-content);
   grid-gap: 4rem 8rem;
 }
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+footer.footer span {
+  background-color: #474747;
+  height: 50%;
+  width: 1px;
+  align-self: center;
+}

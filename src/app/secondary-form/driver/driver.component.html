@@ -1,115 +1,138 @@
-<h1 class="display-4">Drivers Register</h1>
-<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
-  <input
-    type="hidden"
-    name="id"
-    #id="ngModel"
-    [(ngModel)]="service.formData.id"
-  />
-  <div class="form-group">
+<section class="drivers-register-container">
+  <div class="title">
+    <h4>Drivers Register</h4>
+  </div>
+  <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
     <input
-      name="companyName"
-      #companyName="ngModel"
-      [(ngModel)]="service.formData.companyName"
-      class="form-control text-left"
-      placeholder="Company Name"
-      required
+      type="hidden"
+      name="id"
+      #id="ngModel"
+      [(ngModel)]="service.formData.id"
     />
-    <div
-      *ngIf="companyName.invalid && companyName.touched"
-      class="validation-error"
-    >
-      This field is required.
+    <div class="input-wraper">
+      <mat-form-field>
+        <input
+          matInput
+          name="companyName"
+          #companyName="ngModel"
+          [(ngModel)]="service.formData.companyName"
+          placeholder="Company Name"
+          required
+        />
+      </mat-form-field>
+      <div
+        *ngIf="companyName.invalid && companyName.touched"
+        class="validation-error"
+      >
+        This field is required.
+      </div>
     </div>
-  </div>
 
-  <div class="form-group">
-    <input
-      name="trailerNumber"
-      #trailerNumber="ngModel"
-      [(ngModel)]="service.formData.trailerNumber"
-      class="form-control text-left"
-      placeholder="Trailer Number"
-      required
-    />
-    <div
-      *ngIf="trailerNumber.invalid && trailerNumber.touched"
-      class="validation-error"
-    >
-      This field is required.
+    <div class="input-wraper">
+      <mat-form-field>
+        <input
+          matInput
+          name="trailerNumber"
+          #trailerNumber="ngModel"
+          [(ngModel)]="service.formData.trailerNumber"
+          placeholder="Trailer Number"
+          required
+        />
+      </mat-form-field>
+      <div
+        *ngIf="trailerNumber.invalid && trailerNumber.touched"
+        class="validation-error"
+      >
+        This field is required.
+      </div>
     </div>
-  </div>
 
-  <div class="form-group">
-    <input
-      type="time"
-      name="arrivalTime"
-      #arrivalTime="ngModel"
-      [(ngModel)]="service.formData.arrivalTime"
-      class="form-control text-left"
-      placeholder="Arrival Time"
-      required
-    />
-    <div
-      *ngIf="arrivalTime.invalid && arrivalTime.touched"
-      class="validation-error"
-    >
-      This field is required.
+    <div class="input-wraper">
+      <mat-form-field>
+        <input
+          matInput
+          type="time"
+          name="arrivalTime"
+          #arrivalTime="ngModel"
+          [(ngModel)]="service.formData.arrivalTime"
+          placeholder="Arrival Time"
+          required
+        />
+      </mat-form-field>
+      <div
+        *ngIf="arrivalTime.invalid && arrivalTime.touched"
+        class="validation-error"
+      >
+        This field is required.
+      </div>
     </div>
-  </div>
 
-  <div class="form-group">
-    <input
-      name="transportNumber"
-      #transportNumber="ngModel"
-      [(ngModel)]="service.formData.transportNumber"
-      class="form-control text-left"
-      placeholder="Transport Number"
-      required
-      type="number"
-    />
-    <div
-      *ngIf="transportNumber.invalid && transportNumber.touched"
-      class="validation-error"
-    >
-      This field is required.
+    <div class="input-wraper">
+      <mat-form-field>
+        <input
+          matInput
+          name="transportNumber"
+          #transportNumber="ngModel"
+          [(ngModel)]="service.formData.transportNumber"
+          placeholder="Transport Number"
+          required
+          type="number"
+        />
+      </mat-form-field>
+      <div
+        *ngIf="transportNumber.invalid && transportNumber.touched"
+        class="validation-error"
+      >
+        This field is required.
+      </div>
     </div>
-  </div>
 
-  <div class="form-group">
-    <input
-      name="destination"
-      #destination="ngModel"
-      [(ngModel)]="service.formData.destination"
-      class="form-control text-left"
-      placeholder="Destination"
-      required
-    />
-    <div
-      *ngIf="destination.invalid && destination.touched"
-      class="validation-error"
-    >
-      This field is required.
+    <div class="input-wraper">
+      <mat-form-field>
+        <input
+          matInput
+          name="destination"
+          #destination="ngModel"
+          [(ngModel)]="service.formData.destination"
+          placeholder="Destination"
+          required
+        />
+      </mat-form-field>
+      <div
+        *ngIf="destination.invalid && destination.touched"
+        class="validation-error"
+      >
+        This field is required.
+      </div>
     </div>
-  </div>
-
-  <div class="form-group">
-    <input
-      name="fullName"
-      #fullName="ngModel"
-      [(ngModel)]="service.formData.fullName"
-      class="form-control text-left"
-      placeholder="Full Name"
-      required
-    />
-    <div *ngIf="fullName.invalid && fullName.touched" class="validation-error">
-      This field is required.
+    <div class="input-wraper">
+      <mat-form-field>
+        <input
+          matInput
+          name="fullName"
+          #fullName="ngModel"
+          [(ngModel)]="service.formData.fullName"
+          placeholder="Full Name"
+          required
+        />
+      </mat-form-field>
+      <div
+        *ngIf="fullName.invalid && fullName.touched"
+        class="validation-error"
+      >
+        This field is required.
+      </div>
     </div>
-  </div>
 
-  <div class="form-group">
-    <button type="submit" [disabled]="form.invalid" class="btn btn-success">
-      Submit
-    </button>
-  </div>
-</form>
+    <div>
+      <button
+        mat-raised-button
+        color="primary"
+        type="submit"
+        [disabled]="form.invalid"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</section>

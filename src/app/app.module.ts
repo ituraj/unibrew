@@ -1,9 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+// Material Design
+import { MatCardModule } from '@angular/material';
+import { MatButtonModule, MatCheckboxModule } from '@angular/material';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
+// Animations
+
+import { ToastrModule } from 'ngx-toastr';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 // Environments
 
@@ -31,17 +43,6 @@ import { DriverComponent } from './secondary-form/driver/driver.component';
 // Routing
 
 import { AppRoutingModule } from './app-routing.module';
-
-// Animations
-
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ToastrModule } from 'ngx-toastr';
-import { MatCardModule } from '@angular/material';
-import { DragDropModule } from '@angular/cdk/drag-drop';
-
-// Font Awesome
-
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 // Translations
 
@@ -82,11 +83,15 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AngularFirestoreModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
     MatCardModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatInputModule,
+    MatFormFieldModule,
     DragDropModule,
-    FontAwesomeModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {

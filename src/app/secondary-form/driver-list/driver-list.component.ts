@@ -3,7 +3,6 @@ import { DriverService } from 'src/app/shared/driver.service';
 import { Driver } from 'src/app/shared/driver.model';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { ToastrService } from 'ngx-toastr';
-import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-driver-list',
@@ -12,7 +11,6 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 })
 export class DriverListComponent implements OnInit {
   list: Driver[];
-  faTrash = faTrash;
   constructor(
     private service: DriverService,
     private firestore: AngularFirestore,
