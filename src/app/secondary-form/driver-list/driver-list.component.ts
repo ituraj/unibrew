@@ -12,9 +12,9 @@ import { ToastrService } from 'ngx-toastr';
 export class DriverListComponent implements OnInit {
   list: Driver[];
   constructor(
-    private service: DriverService,
-    private firestore: AngularFirestore,
-    private toastr: ToastrService
+    public service: DriverService,
+    public firestore: AngularFirestore,
+    public toastr: ToastrService
   ) {}
 
   // This function will return an object from the firestore database with assigned id:

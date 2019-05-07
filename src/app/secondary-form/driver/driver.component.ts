@@ -11,9 +11,9 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class DriverComponent implements OnInit {
   constructor(
-    private service: DriverService,
-    private firestore: AngularFirestore,
-    private toastr: ToastrService
+    public service: DriverService,
+    public firestore: AngularFirestore,
+    public toastr: ToastrService
   ) {}
 
   ngOnInit() {
