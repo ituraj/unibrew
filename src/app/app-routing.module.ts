@@ -13,6 +13,7 @@ import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { QuizIntroComponent } from './quiz-intro/quiz-intro.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { ResultComponent } from './result/result.component';
+import { MainFormComponent } from './main-form/main-form.component';
 
 const routes: Routes = [
   { path: '', component: FlagsComponent },
@@ -27,7 +28,8 @@ const routes: Routes = [
   { path: 'workplace-safety', component: DragDropComponent },
   { path: 'quiz-intro', component: QuizIntroComponent },
   { path: 'quiz', component: QuizComponent },
-  { path: 'result', component: ResultComponent }
+  { path: 'result', component: ResultComponent },
+  { path: 'main-form', component: MainFormComponent }
 ];
 
 @NgModule({

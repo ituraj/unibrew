@@ -1,0 +1,69 @@
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+  <mat-horizontal-stepper
+    #linearHorizontalStepper="matHorizontalStepper"
+    formArrayName="formArray"
+    [linear]="true"
+  >
+    <mat-step formGroupName="0" [stepControl]="formArray?.get([0])">
+      <ng-template matStepLabel>Safety Rulers</ng-template>
+      <mat-label>Glasses?</mat-label>
+
+      <mat-radio-group
+        aria-label="Select an option"
+        formControlName="glassesFormCtrl"
+      >
+        <mat-radio-button value="YES">YES</mat-radio-button>
+        <mat-radio-button value="NO">NO</mat-radio-button>
+      </mat-radio-group>
+      <mat-label>Headphones?</mat-label>
+      <mat-radio-group
+        aria-label="Select an option"
+        formControlName="headphonesFormCtrl"
+      >
+        <mat-radio-button value="YES">YES</mat-radio-button>
+        <mat-radio-button value="NO">NO</mat-radio-button>
+      </mat-radio-group>
+      <div>
+        <button mat-button matStepperNext type="button">Next</button>
+      </div>
+    </mat-step>
+
+    <mat-step formGroupName="1" [stepControl]="formArray?.get([1])">
+      <ng-template matStepLabel>Transportation Numbers</ng-template>
+      <mat-form-field>
+        <mat-label>Transportation Number</mat-label>
+        <input
+          matInput
+          formControlName="transportationNumberFormCtrl"
+          required
+        />
+        <mat-error>This field is required</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Trailer Number</mat-label>
+        <input matInput formControlName="trailerNumberFormCtrl" required />
+        <mat-error>This field is required</mat-error>
+      </mat-form-field>
+
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </mat-step>
+
+    <mat-step formGroupName="2" [stepControl]="formArray?.get([2])">
+      <mat-radio-group
+        aria-label="Select an option"
+        formControlName="arrivalDepartureFormCtrl"
+      >
+        <mat-radio-button value="Arrival">Arrival</mat-radio-button>
+        <mat-radio-button value="Departure">Departure</mat-radio-button>
+      </mat-radio-group>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </mat-step>
+  </mat-horizontal-stepper>
+</form>

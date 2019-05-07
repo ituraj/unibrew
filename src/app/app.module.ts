@@ -7,10 +7,15 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 // Material Design
-import { MatCardModule } from '@angular/material';
+import {
+  MatCardModule,
+  MatStepperModule,
+  MatIconModule
+} from '@angular/material';
 import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatRadioModule } from '@angular/material/radio';
 
 // Animations
 
@@ -52,6 +57,8 @@ import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { ResultComponent } from './result/result.component';
 import { QuizIntroComponent } from './quiz-intro/quiz-intro.component';
+import { MainFormComponent } from './main-form/main-form.component';
+import { TestComponent } from './test/test.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -75,7 +82,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     DragDropComponent,
     QuizComponent,
     ResultComponent,
-    QuizIntroComponent
+    QuizIntroComponent,
+    MainFormComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
@@ -89,8 +98,11 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     MatCardModule,
     MatButtonModule,
     MatCheckboxModule,
+    MatIconModule,
     MatInputModule,
     MatFormFieldModule,
+    MatRadioModule,
+    MatStepperModule,
     DragDropModule,
     HttpClientModule,
     TranslateModule.forRoot({
