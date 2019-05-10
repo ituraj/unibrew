@@ -1,21 +1,13 @@
 import { Component } from '@angular/core';
-import { LanguagesService } from '../languages.service';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-flags',
   templateUrl: './flags.component.html',
-  styleUrls: ['./flags.component.css'],
-  providers: [LanguagesService]
+  styleUrls: ['./flags.component.css']
 })
 export class FlagsComponent {
-  languages;
-
-  constructor(
-    public translate: TranslateService,
-    languagesService: LanguagesService
-  ) {
-    this.languages = languagesService.getLanguages();
+  constructor(public translate: TranslateService) {
     translate.addLangs(['en', 'dk', 'de', 'pl', 'ro', 'bg']);
     translate.setDefaultLang('en');
 

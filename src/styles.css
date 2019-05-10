@@ -60,6 +60,7 @@ h2 {
   font-weight: 700;
   letter-spacing: 0.2rem;
   color: #25ae88;
+  text-align: center;
 }
 
 h3,
@@ -119,9 +120,7 @@ button {
   align-self: center;
 }
 /* This we need to code so arrow will be dissable - for testing I just make dissable */
-.arrow:hover {
-  background-color: #d5d3d2;
-}
+
 .back {
   transform: rotate(180deg);
 }
@@ -138,19 +137,19 @@ main {
 
 .section {
   display: grid;
-  width: calc(100vw - 15rem);
-  height: calc(100vh - 15rem);
+  width: 100vw;
+  height: 100vh;
+  padding: 3.5rem 7.5rem;
   grid-template-columns: max-content auto max-content;
 }
 
 .article,
 .article-secondary {
-  height: calc(100vh - 15rem);
   display: grid;
   justify-items: center;
   align-content: center;
   grid-gap: 4rem;
-  grid-template-rows: repeat(3, max-content);
+  grid-template-rows: repeat(2, max-content);
 }
 .article-secondary {
   grid-template-rows: repeat(2, max-content);
@@ -184,7 +183,7 @@ div.validation-error {
 /*----------------- MATERIAL ICONS ---------------------- */
 
 .material-icons {
-  font-size: 2rem;
+  font-size: 4rem;
   cursor: pointer;
 }
 div.confirm .material-icons {
@@ -197,4 +196,9 @@ div.confirm .material-icons:hover {
 
 div.confirm .material-icons:nth-child(2):hover {
   color: #d75a4a;
+}
+
+div.mat-horizontal-stepper-header-container {
+  pointer-events: none !important;
+  display: none;
 }

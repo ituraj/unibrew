@@ -1,0 +1,59 @@
+.safety-container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.mat-button-toggle {
+  color: #d5d3d2;
+}
+.mat-button-toggle-checked:nth-child(1) i {
+  color: #25ae88;
+}
+
+.mat-button-toggle-checked:nth-child(2) i {
+  color: #d75a4a;
+}
+
+/* ---- Safety items[0] ------ */
+.safety-items {
+  display: grid;
+  grid-template-columns: repeat(6, max-content);
+  grid-gap: 1rem;
+}
+
+.item-container {
+  display: grid;
+  grid-template-rows: max-content max-content;
+  grid-gap: 1rem;
+  padding: 0 1.25rem;
+}
+
+.safety-item {
+  width: 8vw;
+  justify-self: center;
+}
+.worker {
+  height: 40vh;
+  justify-self: center;
+}
+
+/*---- Safety items[1] ------*/
+
+.title {
+  text-align: center;
+}
+
+.truck-container {
+  display: grid;
+  justify-items: center;
+  grid-template-rows: repeat(2, max-content);
+  grid-gap: 5rem;
+}
+
+.warehouse-img {
+  max-width: 500px;
+}
+.truck {
+  height: 75px;
+}

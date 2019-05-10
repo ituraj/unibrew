@@ -12,6 +12,44 @@ import {
   styleUrls: ['./main-form.component.css']
 })
 export class MainFormComponent implements OnInit {
+  safetyItems = [
+    {
+      name: 'Safety Glasses',
+      formControlName: 'glassesFormCtrl',
+      img: '../../assets/svg/glasses.svg'
+    },
+
+    {
+      name: 'Headphones',
+      formControlName: 'headphonesFormCtrl',
+      img: '../../assets/svg/headphones.svg'
+    },
+
+    {
+      name: 'Helmet',
+      formControlName: 'helmetFormCtrl',
+      img: '../../assets/svg/helmet.svg'
+    },
+
+    {
+      name: 'Face Mask',
+      formControlName: 'maskFormCtrl',
+      img: '../../assets/svg/mask.svg'
+    },
+
+    {
+      name: 'Safety boots',
+      formControlName: 'bootsFormCtrl',
+      img: '../../assets/svg/shoes.svg'
+    },
+
+    {
+      name: 'Yellow Vest',
+      formControlName: 'vestFormCtrl',
+      img: '../../assets/svg/vest.svg'
+    }
+  ];
+
   formGroup: FormGroup;
 
   safetyFormGroup: FormGroup;
@@ -29,7 +67,11 @@ export class MainFormComponent implements OnInit {
       formArray: this.formBuilder.array([
         this.formBuilder.group({
           glassesFormCtrl: ['', Validators.required],
-          headphonesFormCtrl: ['', Validators.required]
+          headphonesFormCtrl: ['', Validators.required],
+          helmetFormCtrl: ['', Validators.required],
+          maskFormCtrl: ['', Validators.required],
+          bootsFormCtrl: ['', Validators.required],
+          vestFormCtrl: ['', Validators.required]
         }),
         this.formBuilder.group({
           transportationNumberFormCtrl: ['', Validators.required],
@@ -52,6 +94,6 @@ export class MainFormComponent implements OnInit {
   }
   onSubmit() {
     // TODO: Use EventEmitter with form value
-    console.warn(this.formGroup.value);
+    console.log(this.formGroup.value);
   }
 }

@@ -16,6 +16,7 @@ import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 // Animations
 
@@ -34,13 +35,9 @@ import { DriverService } from './shared/driver.service';
 
 import { AppComponent } from './app.component';
 import { FlagsComponent } from './flags/flags.component';
-import { SafetyComponent } from './safety/safety.component';
-import { TransportNumberComponent } from './transport-number/transport-number.component';
-import { ArrivalDepartureComponent } from './arrival-departure/arrival-departure.component';
 import { ArrivalComponent } from './arrival/arrival.component';
 import { DepartureComponent } from './departure/departure.component';
 import { PrintComponent } from './print/print.component';
-import { FlagComponent } from './flag/flag.component';
 import { SecondaryFormComponent } from './secondary-form/secondary-form.component';
 import { DriverListComponent } from './secondary-form/driver-list/driver-list.component';
 import { DriverComponent } from './secondary-form/driver/driver.component';
@@ -68,13 +65,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   declarations: [
     AppComponent,
     FlagsComponent,
-    SafetyComponent,
-    TransportNumberComponent,
-    ArrivalDepartureComponent,
     ArrivalComponent,
     DepartureComponent,
     PrintComponent,
-    FlagComponent,
     SecondaryFormComponent,
     DriverListComponent,
     DriverComponent,
@@ -100,6 +93,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     MatInputModule,
     MatFormFieldModule,
     MatRadioModule,
+    MatButtonToggleModule,
     MatStepperModule,
     DragDropModule,
     HttpClientModule,
