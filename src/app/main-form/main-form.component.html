@@ -50,22 +50,22 @@
           <h2>{{ 'transportation' | translate }}</h2>
           <div class="safety-container">
             <mat-form-field>
-              <mat-label>{{ 'transport' | translate }}</mat-label>
+              <mat-label>{{ 'transportNumber' | translate }}</mat-label>
               <input
                 matInput
                 formControlName="transportationNumberFormCtrl"
                 required
               />
-              <mat-error>This field is required</mat-error>
+              <mat-error>{{ 'required' | translate }}</mat-error>
             </mat-form-field>
             <mat-form-field>
-              <mat-label>Trailer Number</mat-label>
+              <mat-label>{{ 'trailerNumber' | translate }}</mat-label>
               <input
                 matInput
                 formControlName="trailerNumberFormCtrl"
                 required
               />
-              <mat-error>This field is required</mat-error>
+              <mat-error>{{ 'required' | translate }}</mat-error>
             </mat-form-field>
           </div>
         </article>

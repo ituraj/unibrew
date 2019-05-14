@@ -1,13 +1,13 @@
 <table class="table table-hover">
   <thead>
-    <th>Company Name</th>
-    <th>Trailer Number</th>
-    <th>Arrival Time</th>
-    <th>Transport Number</th>
-    <th>Destination</th>
-    <th>Full Name</th>
-    <th>Edit</th>
-    <th>Delete</th>
+    <th>{{ 'companyName' | translate }}</th>
+    <th>{{ 'trailerNumber' | translate }}</th>
+    <th>{{ 'arrivalTime' | translate }}</th>
+    <th>{{ 'transportNumber' | translate }}</th>
+    <th>{{ 'destination' | translate }}</th>
+    <th>{{ 'fullName' | translate }}</th>
+    <th>{{ 'edit' | translate }}</th>
+    <th>{{ 'delete' | translate }}</th>
   </thead>
   <tbody>
     <tr *ngFor="let driver of list">
@@ -18,10 +18,10 @@
       <td (click)="onEdit(driver)">{{ driver.destination }}</td>
       <td (click)="onEdit(driver)">{{ driver.fullName }}</td>
       <td (click)="onEdit(driver)">
-        <i class="material-icons">edit</i>
+        <i class="material-icons">{{ 'edit' | translate }}</i>
       </td>
       <td (click)="onDelete(driver.id)">
-        <i class="material-icons">delete</i>
+        <i class="material-icons">{{ 'delete' | translate }}</i>
       </td>
     </tr>
   </tbody>
