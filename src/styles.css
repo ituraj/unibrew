@@ -79,6 +79,12 @@ h5 {
 h5 {
   text-align: center;
 }
+
+p {
+  color: #474747;
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+}
 /*--------------- BUTTONS ----------------- */
 
 button {
@@ -127,7 +133,6 @@ button {
 
 /*--------------- MAIN ----------------- */
 main {
-  height: 100vh;
   padding: 7.5rem 7.5rem;
   display: flex;
   justify-content: center;

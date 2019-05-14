@@ -1,44 +1,30 @@
-<section class="section">
-  <div class="row" *ngIf="quizService.questions">
-    <div class="col s8 offset-s2">
-      <div class="progress">
-        <div
-          class="determinate"
-          [style.width.%]="(quizService.questionProgress + 1) * 7"
-        ></div>
-      </div>
-      <div
-        class="card light-blue darken-2"
-        *ngIf="quizService.questions[quizService.questionProgress]"
-      >
-        <div class="card-content white-text">
-          <span class="card-title">{{ quizService.questionProgress + 1 }}</span>
-          <p>
-            {{
-              quizService.questions[quizService.questionProgress].getQuestion()
-            }}
-          </p>
-        </div>
-        <div class="card-action">
-          <ul class="collection answer">
-            <ng-container
-              *ngFor="
-                let option of quizService.questions[
-                  quizService.questionProgress
-                ].getAnswers()
-              "
+<section>
+  <mat-card *ngIf="quizService.questions">
+    <div [style.width.%]="(quizService.questionProgress + 1) * 7"></div>
+    <div *ngIf="quizService.questions[quizService.questionProgress]">
+      <mat-card-title>
+        <span>{{ quizService.questionProgress + 1 }} / 7</span>
+        {{ quizService.questions[quizService.questionProgress].getQuestion() }}
+      </mat-card-title>
+      <div>
+        <mat-grid-list cols="2" rowHeight="15rem:10rem" gutterSize="1rem">
+          <ng-container
+            *ngFor="
+              let option of quizService.questions[
+                quizService.questionProgress
+              ].getAnswers()
+            "
+          >
+            <mat-grid-tile
+              *ngIf="option != null"
+              class="collection-item"
+              (click)="answerQuestion(option)"
             >
-              <li
-                *ngIf="option != null"
-                class="collection-item"
-                (click)="answerQuestion(option)"
-              >
-                {{ option }}
-              </li>
-            </ng-container>
-          </ul>
-        </div>
+              <p>{{ option }}</p>
+            </mat-grid-tile>
+          </ng-container>
+        </mat-grid-list>
       </div>
     </div>
-  </div>
+  </mat-card>
 </section>

@@ -1,8 +1,6 @@
 {
   "safety": "Safety Rules",
   "transportation": "Transport Information",
-  "fullName": "Full Name",
-  "companyName": "Company Name",
   "transportNumber": "Transport Number",
   "trailerNumber": "Trailer Number",
   "required": "This field is required",
@@ -13,5 +11,10 @@
   "load": "Load",
   "collect": "Collect Loaded",
   "thanks": "Thank You",
-  "print": "Printing..."
+  "print": "Printing...",
+  "driversRegister": "Drivers Register",
+  "companyName": "Company Name",
+  "arrivalTime": "Arrival Time",
+  "destination": "Destination",
+  "fullName": "Full Name"
 }
