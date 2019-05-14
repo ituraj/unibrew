@@ -55,6 +55,7 @@ import { QuizComponent } from './quiz/quiz.component';
 import { ResultComponent } from './result/result.component';
 import { QuizIntroComponent } from './quiz-intro/quiz-intro.component';
 import { MainFormComponent } from './main-form/main-form.component';
+import { PrintLayoutComponent } from './print-layout/print-layout.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -75,7 +76,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     QuizComponent,
     ResultComponent,
     QuizIntroComponent,
-    MainFormComponent
+    MainFormComponent,
+    PrintLayoutComponent
   ],
   imports: [
     BrowserModule,

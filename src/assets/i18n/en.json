@@ -1,6 +1,11 @@
 {
   "safety": "Safety Rules",
-  "transport": "Transportation Number",
+  "transportation": "Transport Information",
+  "fullName": "Full Name",
+  "companyName": "Company Name",
+  "transportNumber": "Transport Number",
+  "trailerNumber": "Trailer Number",
+  "required": "This field is required",
   "arrival": "Arrival",
   "departure": "Departure",
   "empty": "Empty Trailer",
