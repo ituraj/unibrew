@@ -1,11 +1,46 @@
 <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
   <mat-horizontal-stepper
+    #stepper
     #linearHorizontalStepper="matHorizontalStepper"
     formArrayName="formArray"
     [linear]="false"
   >
     <mat-step formGroupName="0" [stepControl]="formArray?.get([0])">
-      <section class=" section">
+      <section class="section">
+        <div></div>
+        <article>
+          <h2>Choose form</h2>
+          <mat-button-toggle-group
+            aria-label="Select an option"
+            formControlName="formTypeFormCtrl"
+          >
+            <mat-button-toggle value="main-form">
+              <button
+                mat-flat-button
+                color="primary"
+                matStepperNext
+                type="button"
+                alt="next step"
+              >
+                Main Form
+              </button>
+            </mat-button-toggle>
+            <mat-button-toggle
+              value="secondary-form"
+              routerLink="/drivers-register"
+            >
+              <button mat-flat-button color="primary">
+                Secondary Form
+              </button>
+            </mat-button-toggle>
+          </mat-button-toggle-group>
+        </article>
+        <div></div>
+      </section>
+    </mat-step>
+
+    <mat-step formGroupName="1" [stepControl]="formArray?.get([1])">
+      <section class="section">
         <button class="arrow back" routerLink="/" alt="previous step">
           &#10132;
         </button>
@@ -41,7 +76,37 @@
       </section>
     </mat-step>
 
-    <mat-step formGroupName="1" [stepControl]="formArray?.get([1])">
+    <mat-step formGroupName="2" [stepControl]="formArray?.get([2])">
+      <section class="section">
+        <button matStepperPrevious class="arrow back" alt="previous step">
+          &#10132;
+        </button>
+        <article>
+          <h2>Truck Inspection</h2>
+          <img
+            class="warehouse-img"
+            src="../../assets/svg/warehouse.svg"
+            alt="warehouse"
+          />
+          <mat-button-toggle-group
+            aria-label="Select an option"
+            formControlName="truckInspectionFormCtrl"
+          >
+            <mat-button-toggle value="yes">
+              <i class="material-icons" alt="yes">check_circle</i>
+            </mat-button-toggle>
+            <mat-button-toggle value="no">
+              <i class="no material-icons" alt="no">cancel</i>
+            </mat-button-toggle>
+          </mat-button-toggle-group>
+        </article>
+        <button matStepperNext type="button" class="arrow" alt="next step">
+          &#10132;
+        </button>
+      </section>
+    </mat-step>
+
+    <mat-step formGroupName="3" [stepControl]="formArray?.get([3])">
       <section class="section">
         <button matStepperPrevious class="arrow back" alt="previous step">
           &#10132;
@@ -80,7 +145,7 @@
       </section>
     </mat-step>
 
-    <mat-step formGroupName="2" [stepControl]="formArray?.get([2])">
+    <mat-step formGroupName="4" [stepControl]="formArray?.get([4])">
       <section class="section">
         <button matStepperPrevious class="arrow back" alt="previous step">
           &#10132;
@@ -104,7 +169,7 @@
                 />
               </a>
               <mat-button-toggle value="Ankomst">
-                <button mat-flat-button color="primary">
+                <button matStepperNext mat-flat-button color="primary">
                   {{ 'arrival' | translate }}
                 </button>
               </mat-button-toggle>
@@ -119,8 +184,196 @@
                 />
               </a>
               <mat-button-toggle value="Afgang">
-                <button mat-flat-button color="primary">
+                <button mat-flat-button color="primary" (click)="move(8)">
                   {{ 'departure' | translate }}
+                </button>
+              </mat-button-toggle>
+            </article>
+          </mat-button-toggle-group>
+        </article>
+        <button matStepperNext type="button" class="arrow" alt="next step">
+          &#10132;
+        </button>
+      </section>
+    </mat-step>
+
+    <mat-step formGroupName="5" [stepControl]="formArray?.get([5])">
+      <section class="section">
+        <button matStepperPrevious class="arrow back" alt="previous step">
+          &#10132;
+        </button>
+        <article class="article">
+          <mat-button-toggle-group
+            aria-label="Select an option"
+            formControlName="arrivalTypeFormCtrl"
+          >
+            <article class="truck-container">
+              <img
+                class="truck"
+                src="../../assets/svg/trailerEmpty.svg"
+                alt="truck arriving"
+              />
+              <mat-button-toggle value="Tøm Trailer" routerLink="/print">
+                <button mat-flat-button color="primary">
+                  Empty
+                </button>
+              </mat-button-toggle>
+            </article>
+
+            <article class="truck-container">
+              <a routerLink="/departure">
+                <img
+                  class="truck"
+                  src="../../assets/svg/returningGoods.svg"
+                  alt="truck leaving"
+                />
+              </a>
+              <mat-button-toggle value="Returvarer">
+                <button matStepperNext mat-flat-button color="primary">
+                  Returning goods
+                </button>
+              </mat-button-toggle>
+            </article>
+          </mat-button-toggle-group>
+        </article>
+        <button matStepperNext type="button" class="arrow" alt="next step">
+          &#10132;
+        </button>
+      </section>
+    </mat-step>
+
+    <mat-step formGroupName="6" [stepControl]="formArray?.get([6])">
+      <section class="section">
+        <button matStepperPrevious class="arrow back" alt="previous step">
+          &#10132;
+        </button>
+        <article class="article">
+          <mat-button-toggle-group
+            aria-label="Select an option"
+            formControlName="returnFormCtrl"
+          >
+            <article class="truck-container">
+              <img
+                class="truck"
+                src="../../assets/svg/trailerEmpty.svg"
+                alt="truck arriving"
+              />
+              <mat-button-toggle value="Tøm Trailer">
+                <button mat-flat-button color="primary">
+                  Empty
+                </button>
+              </mat-button-toggle>
+            </article>
+
+            <article class="truck-container">
+              <a routerLink="/departure">
+                <img
+                  class="truck"
+                  src="../../assets/svg/returningGoods.svg"
+                  alt="truck leaving"
+                />
+              </a>
+              <mat-button-toggle value="Returvarer">
+                <button matStepperNext mat-flat-button color="primary">
+                  Returning goods
+                </button>
+              </mat-button-toggle>
+            </article>
+          </mat-button-toggle-group>
+        </article>
+        <button matStepperNext type="button" class="arrow" alt="next step">
+          &#10132;
+        </button>
+      </section>
+    </mat-step>
+
+    <mat-step formGroupName="7" [stepControl]="formArray?.get([7])">
+      <section class="section">
+        <button matStepperPrevious class="arrow back" alt="previous step">
+          &#10132;
+        </button>
+        <article class="article">
+          <mat-button-toggle-group
+            aria-label="Select an option"
+            formControlName="returnGoodsFormCtrl"
+          >
+            <article class="truck-container">
+              <img
+                class="truck"
+                src="../../assets/svg/trailerEmpty.svg"
+                alt="truck arriving"
+              />
+              <mat-button-toggle value="10">
+                <button mat-flat-button color="primary">
+                  7
+                </button>
+              </mat-button-toggle>
+            </article>
+
+            <article class="truck-container">
+              <a routerLink="/departure">
+                <img
+                  class="truck"
+                  src="../../assets/svg/returningGoods.svg"
+                  alt="truck leaving"
+                />
+              </a>
+              <mat-button-toggle value="10">
+                <button mat-flat-button color="primary">
+                  10
+                </button>
+              </mat-button-toggle>
+            </article>
+          </mat-button-toggle-group>
+        </article>
+        <button matStepperNext type="button" class="arrow" alt="next step">
+          &#10132;
+        </button>
+      </section>
+    </mat-step>
+
+    <mat-step formGroupName="8" [stepControl]="formArray?.get([8])">
+      <section class="section">
+        <button (click)="move(4)" class="arrow back" alt="previous step">
+          &#10132;
+        </button>
+        <article class="article">
+          <mat-button-toggle-group
+            aria-label="Select an option"
+            formControlName="departureFormCtrl"
+          >
+            <article class="truck-container">
+              <img
+                class="truck"
+                src="../../assets/svg/truckLoading.svg"
+                alt="truck arriving"
+              />
+              <mat-button-toggle
+                matStepperNext
+                value="Læsse"
+                routerLink="/print"
+              >
+                <button mat-flat-button color="primary">
+                  Load
+                </button>
+              </mat-button-toggle>
+            </article>
+
+            <article class="truck-container">
+              <a routerLink="/departure">
+                <img
+                  class="truck"
+                  src="../../assets/svg/truckLeaving.svg"
+                  alt="truck leaving"
+                />
+              </a>
+              <mat-button-toggle
+                matStepperNext
+                value="Saml Lastet"
+                routerLink="/print"
+              >
+                <button mat-flat-button color="primary">
+                  Collect Loaded
                 </button>
               </mat-button-toggle>
             </article>

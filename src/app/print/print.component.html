@@ -4,4 +4,7 @@
     <h3>{{ 'print' | translate }}</h3>
     <img src="../../assets/svg/printer.svg" alt="printing form" />
   </div>
+  <button [useExistingCss]="true" printSectionId="print-section" ngxPrint>
+    PRINT
+  </button>
 </section>

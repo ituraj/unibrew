@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, VERSION, ViewChild } from '@angular/core';
 // import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html'
 })
-export class AppComponent {}
+export class AppComponent {
+  ngVersion: string = VERSION.full;
+}

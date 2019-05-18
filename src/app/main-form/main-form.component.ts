@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, VERSION, ViewChild } from '@angular/core';
 import {
   NgForm,
   AbstractControl,
@@ -8,6 +8,7 @@ import {
 } from '@angular/forms';
 import { MainFormService } from 'src/app/shared/main-form.service';
 import { AngularFirestore } from '@angular/fire/firestore';
+import { MatStepper } from '@angular/material';
 
 @Component({
   selector: 'app-main-form',
@@ -15,6 +16,9 @@ import { AngularFirestore } from '@angular/fire/firestore';
   styleUrls: ['./main-form.component.css']
 })
 export class MainFormComponent implements OnInit {
+  @ViewChild('stepper') stepper: MatStepper;
+  ngVersion: string = VERSION.full;
+  matVersion: string = '5.1.0';
   safetyItems = [
     {
       name: 'Safety Glasses',
@@ -73,6 +77,9 @@ export class MainFormComponent implements OnInit {
     this.formGroup = this.formBuilder.group({
       formArray: this.formBuilder.array([
         this.formBuilder.group({
+          formTypeFormCtrl: ['', Validators.required]
+        }),
+        this.formBuilder.group({
           glassesFormCtrl: ['', Validators.required],
           headphonesFormCtrl: ['', Validators.required],
           helmetFormCtrl: ['', Validators.required],
@@ -81,12 +88,27 @@ export class MainFormComponent implements OnInit {
           vestFormCtrl: ['', Validators.required]
         }),
         this.formBuilder.group({
+          truckInspectionFormCtrl: ['', Validators.required]
+        }),
+        this.formBuilder.group({
           fullNameFormCtrl: ['', Validators.required],
           transportationNumberFormCtrl: ['', Validators.required],
           trailerNumberFormCtrl: ['', Validators.required]
         }),
         this.formBuilder.group({
           arrivalDepartureFormCtrl: ['', Validators.required]
+        }),
+        this.formBuilder.group({
+          arrivalTypeFormCtrl: ['', Validators.required]
+        }),
+        this.formBuilder.group({
+          returnFormCtrl: ['', Validators.required]
+        }),
+        this.formBuilder.group({
+          returnGoodsFormCtrl: ['', Validators.required]
+        }),
+        this.formBuilder.group({
+          departureFormCtrl: ['', Validators.required]
         })
       ])
     });
@@ -110,5 +132,8 @@ export class MainFormComponent implements OnInit {
     } else {
       this.firestore.doc('main-form/' + this.formGroup.value.id).update(data);
     }
+  }
+  move(index: number) {
+    this.stepper.selectedIndex = index;
   }
 }
