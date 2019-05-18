@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import {
+  NgForm,
   AbstractControl,
   FormBuilder,
   FormGroup,
   Validators
 } from '@angular/forms';
+import { MainFormService } from 'src/app/shared/main-form.service';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-main-form',
@@ -60,7 +63,11 @@ export class MainFormComponent implements OnInit {
     return this.formGroup.get('formArray');
   }
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(
+    private formBuilder: FormBuilder,
+    public service: MainFormService,
+    public firestore: AngularFirestore
+  ) {}
 
   ngOnInit() {
     this.formGroup = this.formBuilder.group({
@@ -92,8 +99,14 @@ export class MainFormComponent implements OnInit {
       trailerNumberFormCtrl: ['', Validators.required]
     });
   }
+
   onSubmit() {
-    // TODO: Use EventEmitter with form value
     console.log(this.formGroup.value);
+    let data = Object.assign({}, this.formGroup.value);
+    if (this.formGroup.value.id == null) {
+      this.firestore.collection('main-form').add(data);
+    } else {
+      this.firestore.doc('main-form/' + this.formGroup.value.id).update(data);
+    }
   }
 }
