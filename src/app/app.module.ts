@@ -32,6 +32,9 @@ import { environment } from 'src/environments/environment';
 
 import { DriverService } from './shared/driver.service';
 
+// Print
+import { NgxPrintModule } from 'ngx-print';
+
 // Components
 
 import { AppComponent } from './app.component';
@@ -101,6 +104,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     MatStepperModule,
     DragDropModule,
     HttpClientModule,
+    NgxPrintModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

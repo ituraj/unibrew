@@ -11,6 +11,7 @@ import { QuizIntroComponent } from './quiz-intro/quiz-intro.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { ResultComponent } from './result/result.component';
 import { MainFormComponent } from './main-form/main-form.component';
+import { PrintLayoutComponent } from './print-layout/print-layout.component';
 
 const routes: Routes = [
   { path: '', component: FlagsComponent },
@@ -23,7 +24,8 @@ const routes: Routes = [
   { path: 'quiz-intro', component: QuizIntroComponent },
   { path: 'quiz', component: QuizComponent },
   { path: 'result', component: ResultComponent },
-  { path: 'main-form', component: MainFormComponent }
+  { path: 'main-form', component: MainFormComponent },
+  { path: 'print-layout', component: PrintLayoutComponent }
 ];
 
 @NgModule({

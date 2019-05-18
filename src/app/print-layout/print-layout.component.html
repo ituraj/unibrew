@@ -1,3 +1,180 @@
-<p>
-  print-layout works!
-</p>
+<div id="print-section" class="print-section">
+  <section class="grid">
+    <header class="header-grid">
+      <div>Ordrehåndteringsseddel</div>
+      <div>Date:</div>
+    </header>
+    <section class="section1">
+      <div class="half">
+        <div class="section1-left">
+          <p class="section-title">Udfyldes af chauffør</p>
+          <div class="transport-no-grid">
+            <p>Transportnummer</p>
+            <p>Transport number PLACEHOLDER</p>
+          </div>
+          <div class="deliver-no-grid">
+            <p>Laveringsnummer</p>
+            <p>Antal</p>
+          </div>
+        </div>
+        <div class="section1-right">
+          <p class="section-title">Udfyldes af bryggeri</p>
+          <div class="col-wraper">
+            <p>Rampe</p>
+            <p>Paller v Kontor</p>
+            <p>Lager</p>
+            <p>Port</p>
+          </div>
+        </div>
+      </div>
+      <div class="empty-rows">
+        <div class="empty-row">
+          <p>1</p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+        <div class="empty-row">
+          <p>2</p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+        <div class="empty-row">
+          <p>3</p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+        <div class="empty-row">
+          <p>4</p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+        <div class="empty-row">
+          <p>5</p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+        <div class="empty-row">
+          <p>6</p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+        <div class="empty-row">
+          <p></p>
+          <p>Insp& Leaset af:</p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section2">
+      <div class="section2-left">
+        <div>Inspection point</div>
+        <div>
+          <p>Auto-nr</p>
+          <p>placeholder</p>
+        </div>
+      </div>
+
+      <div class="section2-right">
+        <div class="half">
+          <p>Ankomst</p>
+          <p>Placeholder</p>
+        </div>
+        <div class="half">
+          <p>Afgang</p>
+          <p>Placeholder</p>
+        </div>
+        <div><p>Ved eksportleverencecer - Kryds Af</p></div>
+        <div class="half">
+          <div class="half">
+            <p>Trailer OK</p>
+            <p>Placeholder</p>
+          </div>
+          <div class="half">
+            <p>Trailer OK</p>
+            <p>Placeholder</p>
+          </div>
+        </div>
+        <div class="half">
+          <div class="half">
+            <p>Trailer OK</p>
+            <p>Placeholder</p>
+          </div>
+          <div class="half">
+            <p>Trailer OK</p>
+            <p>Placeholder</p>
+          </div>
+        </div>
+        <div class="half">
+          <div class="half">
+            <p>Trailer OK</p>
+            <p>Placeholder</p>
+          </div>
+          <div class="half">
+            <p>Trailer OK</p>
+            <p>Placeholder</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section3">
+      <div class="section3-left half-rows">
+        <div>
+          <p>DSV</p>
+          <p>Frodo Laursen</p>
+          <p>Ovrige/Sonstige</p>
+        </div>
+        <div><p>Diverse</p></div>
+      </div>
+      <div class="half-rows">
+        <div class="half-rows">
+          <div class="half">
+            <p>Planlagt afgang</p>
+            <p>Paceholder</p>
+          </div>
+          <div class="half">
+            <p>Faktisk afgang</p>
+            <p>Paceholder</p>
+          </div>
+        </div>
+        <div class="half">
+          <p></p>
+          <p>Internt</p>
+        </div>
+      </div>
+    </section>
+  </section>
+</div>
+
+<button [useExistingCss]="true" printSectionId="print-section" ngxPrint>
+  print
+</button>
