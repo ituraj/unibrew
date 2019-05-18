@@ -81,6 +81,7 @@ export class MainFormComponent implements OnInit {
           vestFormCtrl: ['', Validators.required]
         }),
         this.formBuilder.group({
+          fullNameFormCtrl: ['', Validators.required],
           transportationNumberFormCtrl: ['', Validators.required],
           trailerNumberFormCtrl: ['', Validators.required]
         }),
@@ -95,6 +96,7 @@ export class MainFormComponent implements OnInit {
       headphonesFormCtrl: ['', Validators.required]
     });
     this.trackingNumbersFormGroup = this.formBuilder.group({
+      fullNameFormCtrl: ['', Validators.required],
       transportationNumberFormCtrl: ['', Validators.required],
       trailerNumberFormCtrl: ['', Validators.required]
     });
