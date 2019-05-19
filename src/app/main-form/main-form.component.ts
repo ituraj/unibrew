@@ -91,6 +91,7 @@ export class MainFormComponent implements OnInit {
         }),
         this.formBuilder.group({
           fullNameFormCtrl: ['', Validators.required],
+          companyNameFormCtrl: ['', Validators.required],
           transportationNumberFormCtrl: ['', Validators.required],
           trailerNumberFormCtrl: ['', Validators.required]
         }),
@@ -101,13 +102,13 @@ export class MainFormComponent implements OnInit {
           arrivalTypeFormCtrl: ['', Validators.required]
         }),
         this.formBuilder.group({
-          returnFormCtrl: ['', Validators.required]
-        }),
-        this.formBuilder.group({
           returnGoodsFormCtrl: ['', Validators.required]
         }),
         this.formBuilder.group({
           departureFormCtrl: ['', Validators.required]
+        }),
+        this.formBuilder.group({
+          printFormCtrl: ['', Validators.required]
         })
       ])
     });
@@ -135,7 +136,6 @@ export class MainFormComponent implements OnInit {
         .doc('main-form/' + this.formGroup.value.id)
         .update({ data, timeUpdated });
     }
-    console.log(data);
   }
   move(index: number) {
     this.stepper.selectedIndex = index;
