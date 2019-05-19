@@ -10,6 +10,8 @@ export class MainFormService {
 
   constructor(private firestore: AngularFirestore) {}
   getMainForm() {
-    return this.firestore.collection('main-form').snapshotChanges();
+    return this.firestore
+      .collection('main-form', ref => ref.orderBy('timeCreated', 'asc'))
+      .snapshotChanges();
   }
 }

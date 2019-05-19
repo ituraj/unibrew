@@ -1,7 +1,7 @@
 <div
   id="print-section"
   class="print-section"
-  *ngFor="let item of list | slice: 0:1"
+  *ngFor="let item of list | slice: -1"
 >
   <section class="print-grid">
     <header class="header-grid">
@@ -39,30 +39,30 @@
       <div class="empty-rows">
         <div class="empty-row">
           <p>1</p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+          <p>DELIVERY NUMBER</p>
+          <p>?</p>
+          <p>RAMPE</p>
+          <p>{{ item.data.formArray[6].beerPalletFormCtrl }}</p>
+          <p>LAGER</p>
+          <p>PORT</p>
         </div>
         <div class="empty-row">
           <p>2</p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+          <p>DELIVERY NUMBER</p>
+          <p>?</p>
+          <p>RAMPE</p>
+          <p>{{ item.data.formArray[6].sodasPalletFormCtrl }}</p>
+          <p>LAGER</p>
+          <p>PORT</p>
         </div>
         <div class="empty-row">
           <p>3</p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+          <p>DELIVERY NUMBER</p>
+          <p>?</p>
+          <p>RAMPE</p>
+          <p>{{ item.data.formArray[6].kegsPalletFormCtrl }}</p>
+          <p>LAGER</p>
+          <p>PORT</p>
         </div>
         <div class="empty-row">
           <p>4</p>

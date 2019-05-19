@@ -8,6 +8,7 @@ import {
 import { MainFormService } from 'src/app/shared/main-form.service';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { MatStepper } from '@angular/material';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-form',
@@ -18,6 +19,7 @@ export class MainFormComponent implements OnInit {
   @ViewChild('stepper') stepper: MatStepper;
   ngVersion: string = VERSION.full;
   matVersion: string = '5.1.0';
+  isDisabled: boolean;
   safetyItems = [
     {
       name: 'Safety Glasses',
@@ -69,7 +71,8 @@ export class MainFormComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     public service: MainFormService,
-    public firestore: AngularFirestore
+    public firestore: AngularFirestore,
+    private router: Router
   ) {}
 
   ngOnInit() {
@@ -141,13 +144,17 @@ export class MainFormComponent implements OnInit {
       this.firestore
         .collection('main-form')
         .add({ data, dateString, timeString, timeCreated });
-    } else {
-      this.firestore
-        .doc('main-form/' + this.formGroup.value.id)
-        .update({ data, dateString, timeString });
     }
   }
   move(index: number) {
     this.stepper.selectedIndex = index;
+  }
+
+  startPrinting() {
+    this.onSubmit();
+    this.move(8);
+    setTimeout(() => {
+      this.router.navigate(['/print-layout']);
+    }, 2000);
   }
 }

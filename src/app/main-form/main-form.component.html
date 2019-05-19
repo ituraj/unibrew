@@ -203,9 +203,15 @@
               </article>
             </mat-button-toggle-group>
           </article>
-          <button matStepperNext type="button" class="arrow" alt="next step">
+          <!-- <button
+            matStepperNext
+            type="button"
+            class="arrow"
+            alt="next step"
+            disabled
+          >
             &#10132;
-          </button>
+          </button> -->
         </section>
       </mat-step>
 
@@ -226,7 +232,11 @@
                   alt="truck arriving"
                 />
                 <mat-button-toggle value="Tøm Trailer">
-                  <button mat-flat-button color="primary" (click)="move(8)">
+                  <button
+                    mat-flat-button
+                    color="primary"
+                    (click)="startPrinting()"
+                  >
                     Empty
                   </button>
                 </mat-button-toggle>
@@ -248,9 +258,15 @@
               </article>
             </mat-button-toggle-group>
           </article>
-          <button matStepperNext type="button" class="arrow" alt="next step">
+          <!-- <button
+            matStepperNext
+            type="button"
+            class="arrow"
+            alt="next step"
+            disabled
+          >
             &#10132;
-          </button>
+          </button> -->
         </section>
       </mat-step>
 
@@ -269,7 +285,7 @@
                   alt="sodas pallets"
                 />
                 <mat-form-field>
-                  <mat-label>No of pallets</mat-label>
+                  <mat-label>No. of pallets</mat-label>
                   <input matInput formControlName="sodasPalletFormCtrl" />
                 </mat-form-field>
               </div>
@@ -280,7 +296,7 @@
                   alt="beer pallets"
                 />
                 <mat-form-field>
-                  <mat-label>No of pallets</mat-label>
+                  <mat-label>No. of pallets</mat-label>
                   <input matInput formControlName="beerPalletFormCtrl" />
                 </mat-form-field>
               </div>
@@ -291,13 +307,18 @@
                   alt="kegs pallets"
                 />
                 <mat-form-field>
-                  <mat-label>No of pallets</mat-label>
+                  <mat-label>No. of pallets</mat-label>
                   <input matInput formControlName="kegsPalletFormCtrl" />
                 </mat-form-field>
               </div>
             </div>
           </article>
-          <button matStepperNext type="button" class="arrow" alt="next step">
+          <button
+            type="button"
+            class="arrow"
+            alt="next step"
+            (click)="startPrinting()"
+          >
             &#10132;
           </button>
         </section>
@@ -320,7 +341,12 @@
                   alt="truck arriving"
                 />
                 <mat-button-toggle value="Læsse">
-                  <button mat-flat-button color="primary" matStepperNext>
+                  <button
+                    mat-flat-button
+                    color="primary"
+                    matStepperNext
+                    (click)="startPrinting()"
+                  >
                     Load
                   </button>
                 </mat-button-toggle>
@@ -335,16 +361,21 @@
                   />
                 </a>
                 <mat-button-toggle value="Saml Lastet">
-                  <button mat-flat-button color="primary" matStepperNext>
+                  <button
+                    mat-flat-button
+                    color="primary"
+                    matStepperNext
+                    (click)="startPrinting()"
+                  >
                     Collect Loaded
                   </button>
                 </mat-button-toggle>
               </article>
             </mat-button-toggle-group>
           </article>
-          <button matStepperNext type="button" class="arrow" alt="next step">
+          <!-- <button matStepperNext type="button" class="arrow" alt="next step" disabled>
             &#10132;
-          </button>
+          </button> -->
         </section>
       </mat-step>
       <mat-step formGroupName="8" [stepControl]="formArray?.get([8])">
