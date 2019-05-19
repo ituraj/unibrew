@@ -152,13 +152,11 @@ main {
   display: grid;
   width: 100%;
   min-height: 80vh;
-  background-color: blue;
   grid-template-columns: max-content auto max-content;
 }
 
 /*--------------- when there is only 1 arrow ----------------- */
 .section-mod {
-  background-color: purple;
   grid-template-columns: max-content auto 7.5rem;
 }
 
@@ -221,4 +219,7 @@ div.confirm .material-icons:nth-child(2):hover {
 div.mat-horizontal-stepper-header-container {
   pointer-events: none !important;
   display: none;
+}
+.secondary-form-icon {
+  font-size: 2rem;
 }
