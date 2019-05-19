@@ -9,4 +9,6 @@ export class MainFormItem {
   transportationNumberFormCtrl: string;
   trailerNumberFormCtrl: string;
   arrivalDepartureFormCtrl: string;
+  fullNameFormCtrl: string;
+  companyNameFormCtrl: string;
 }

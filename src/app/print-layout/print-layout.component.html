@@ -6,10 +6,12 @@
   <section class="print-grid">
     <header class="header-grid">
       <p>Ordrehåndteringsseddel</p>
+
       <p>
         Date:
-        <span> {{ today | date: 'dd/MM/yyyy' }}</span>
-        <span> {{ today | date: 'shortTime' }}</span>
+
+        <span> {{ item.dateString }}</span>
+        <span> {{ item.timestamp }}</span>
       </p>
     </header>
     <section class="section1">

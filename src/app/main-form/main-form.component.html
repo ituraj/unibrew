@@ -360,7 +360,11 @@
               aria-label="Select an option"
               formControlName="printFormCtrl"
             >
-              <mat-button-toggle value="print" (click)="onSubmit()">
+              <mat-button-toggle
+                value="print"
+                (click)="onSubmit()"
+                routerLink="/print-layout"
+              >
                 <img src="../../assets/svg/printer.svg" alt="printing form" />
               </mat-button-toggle>
             </mat-button-toggle-group>

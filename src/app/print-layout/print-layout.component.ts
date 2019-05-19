@@ -26,14 +26,4 @@ export class PrintLayoutComponent implements OnInit {
       });
     });
   }
-
-  onEdit(item: MainFormItem) {
-    this.service.formData = Object.assign({}, item);
-  }
-
-  onDelete(id: string) {
-    if (confirm('Would you like to delete this item?')) {
-      this.firestore.doc('main-form/' + id).delete();
-    }
-  }
 }
