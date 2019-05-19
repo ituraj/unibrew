@@ -219,9 +219,9 @@
               aria-label="Select an option"
               formControlName="arrivalTypeFormCtrl"
             >
-              <article class="truck-container">
+              <article class="trailer-container">
                 <img
-                  class="truck"
+                  class="trailer"
                   src="../../assets/svg/trailerEmpty.svg"
                   alt="truck arriving"
                 />
@@ -232,10 +232,10 @@
                 </mat-button-toggle>
               </article>
 
-              <article class="truck-container">
+              <article class="trailer-container">
                 <a routerLink="/departure">
                   <img
-                    class="truck"
+                    class="trailer"
                     src="../../assets/svg/returningGoods.svg"
                     alt="truck leaving"
                   />
@@ -270,12 +270,7 @@
                 />
                 <mat-form-field>
                   <mat-label>No of pallets</mat-label>
-                  <input
-                    matInput
-                    formControlName="sodasPalletFormCtrl"
-                    required
-                  />
-                  <mat-error>{{ 'required' | translate }}</mat-error>
+                  <input matInput formControlName="sodasPalletFormCtrl" />
                 </mat-form-field>
               </div>
               <div class="pallet-container">
@@ -286,12 +281,7 @@
                 />
                 <mat-form-field>
                   <mat-label>No of pallets</mat-label>
-                  <input
-                    matInput
-                    formControlName="beerPalletFormCtrl"
-                    required
-                  />
-                  <mat-error>{{ 'required' | translate }}</mat-error>
+                  <input matInput formControlName="beerPalletFormCtrl" />
                 </mat-form-field>
               </div>
               <div class="pallet-container">
@@ -302,12 +292,7 @@
                 />
                 <mat-form-field>
                   <mat-label>No of pallets</mat-label>
-                  <input
-                    matInput
-                    formControlName="kegsPalletFormCtrl"
-                    required
-                  />
-                  <mat-error>{{ 'required' | translate }}</mat-error>
+                  <input matInput formControlName="kegsPalletFormCtrl" />
                 </mat-form-field>
               </div>
             </div>

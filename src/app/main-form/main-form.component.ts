@@ -102,9 +102,9 @@ export class MainFormComponent implements OnInit {
           arrivalTypeFormCtrl: ['', Validators.required]
         }),
         this.formBuilder.group({
-          sodasPalletFormCtrl: ['', Validators.required],
-          beerPalletFormCtrl: ['', Validators.required],
-          kegsPalletFormCtrl: ['', Validators.required]
+          sodasPalletFormCtrl: [''],
+          beerPalletFormCtrl: [''],
+          kegsPalletFormCtrl: ['']
         }),
         this.formBuilder.group({
           departureFormCtrl: ['', Validators.required]
