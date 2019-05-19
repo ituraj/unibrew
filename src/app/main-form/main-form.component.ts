@@ -129,20 +129,22 @@ export class MainFormComponent implements OnInit {
   onSubmit() {
     console.log(this.formGroup.value);
     let data = Object.assign({}, this.formGroup.value);
-    let currentDate = new Date();
-    const timestamp = currentDate.getTime();
-    const date = currentDate.getDate();
-    const month = currentDate.getMonth();
-    const year = currentDate.getFullYear();
+    let timeCreated = new Date();
+    const date = timeCreated.getDate();
+    const month = timeCreated.getMonth();
+    const year = timeCreated.getFullYear();
     const dateString = date + '/' + (month + 1) + '/' + year;
+    const hour = timeCreated.getHours();
+    const minute = timeCreated.getMinutes();
+    const timeString = hour + ':' + minute;
     if (this.formGroup.value.id == null) {
       this.firestore
         .collection('main-form')
-        .add({ data, dateString, timestamp });
+        .add({ data, dateString, timeString, timeCreated });
     } else {
       this.firestore
         .doc('main-form/' + this.formGroup.value.id)
-        .update({ data });
+        .update({ data, dateString, timeString });
     }
   }
   move(index: number) {

@@ -1,7 +1,7 @@
 <div
   id="print-section"
   class="print-section"
-  *ngFor="let item of list | slice: -1"
+  *ngFor="let item of list | slice: 0:1"
 >
   <section class="print-grid">
     <header class="header-grid">
@@ -9,9 +9,8 @@
 
       <p>
         Date:
-
         <span> {{ item.dateString }}</span>
-        <span> {{ item.timestamp }}</span>
+        <span> {{ item.timeString }}</span>
       </p>
     </header>
     <section class="section1">
@@ -106,7 +105,7 @@
 
     <section class="section2">
       <div class="section2-left">
-        <div class="section-subtitle">Inspection point</div>
+        <div class="section-subtitle">Er traileren tjekket for skade?</div>
         <div class="half">
           <p class="section-subtitle">Auto-nr</p>
           <p>{{ item.data.formArray[3].trailerNumberFormCtrl }}</p>
@@ -158,7 +157,9 @@
       <div class="section3-left half-rows">
         <div class="half">
           <div class="section-subtitle"><p>Firmanavn</p></div>
-          <div><p>Placeholdere</p></div>
+          <div>
+            <p>{{ item.data.formArray[3].companyNameFormCtrl }}</p>
+          </div>
         </div>
         <div class="section-subtitle"><p>Diverse Sonstiges</p></div>
       </div>
@@ -181,7 +182,7 @@
             <p>Test</p>
           </div>
           <div class="queue-grid-mod">
-            <p class="section-subtitle">Internt</p>
+            <p class="section-subtitle">Kø Nummer</p>
             <p>TEST</p>
           </div>
         </div>
