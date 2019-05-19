@@ -87,9 +87,9 @@
           <article class="article">
             <h2>Truck Inspection</h2>
             <img
-              class="warehouse-img"
-              src="../../assets/svg/warehouse.svg"
-              alt="warehouse"
+              class="inspected-truck"
+              src="../../assets/svg/truckInspection.svg"
+              alt="truck inspection image"
             />
             <mat-button-toggle-group
               aria-label="Select an option"
@@ -259,48 +259,58 @@
           <button matStepperPrevious class="arrow back" alt="previous step">
             &#10132;
           </button>
-          <article class="article">
-            <mat-button-toggle-group
-              aria-label="Select an option"
-              formControlName="returnGoodsFormCtrl"
-            >
-              <article class="truck-container">
+          <article>
+            <h2>What are you returning?</h2>
+            <div class="pallets-wrapper">
+              <div class="pallet-container">
                 <img
-                  class="truck"
-                  src="../../assets/svg/trailerEmpty.svg"
-                  alt="truck arriving"
+                  class="pallet"
+                  src="../../assets/svg/sodasPallet.svg"
+                  alt="sodas pallets"
                 />
-                <mat-button-toggle value="1">
-                  <button mat-flat-button color="primary" (click)="move(8)">
-                    Pallet Type 1
-                  </button>
-                </mat-button-toggle>
-              </article>
-              <article class="truck-container">
+                <mat-form-field>
+                  <mat-label>No of pallets</mat-label>
+                  <input
+                    matInput
+                    formControlName="sodasPalletFormCtrl"
+                    required
+                  />
+                  <mat-error>{{ 'required' | translate }}</mat-error>
+                </mat-form-field>
+              </div>
+              <div class="pallet-container">
                 <img
-                  class="truck"
-                  src="../../assets/svg/returningGoods.svg"
-                  alt="truck leaving"
+                  class="pallet"
+                  src="../../assets/svg/beerPallet.svg"
+                  alt="beer pallets"
                 />
-                <mat-button-toggle value="2">
-                  <button mat-flat-button color="primary" (click)="move(8)">
-                    Pallet Type 2
-                  </button>
-                </mat-button-toggle>
-              </article>
-              <article class="truck-container">
+                <mat-form-field>
+                  <mat-label>No of pallets</mat-label>
+                  <input
+                    matInput
+                    formControlName="beerPalletFormCtrl"
+                    required
+                  />
+                  <mat-error>{{ 'required' | translate }}</mat-error>
+                </mat-form-field>
+              </div>
+              <div class="pallet-container">
                 <img
-                  class="truck"
-                  src="../../assets/svg/returningGoods.svg"
-                  alt="truck leaving"
+                  class="pallet"
+                  src="../../assets/svg/kegsPallet.svg"
+                  alt="kegs pallets"
                 />
-                <mat-button-toggle value="3">
-                  <button mat-flat-button color="primary" (click)="move(8)">
-                    Pallet Type 3
-                  </button>
-                </mat-button-toggle>
-              </article>
-            </mat-button-toggle-group>
+                <mat-form-field>
+                  <mat-label>No of pallets</mat-label>
+                  <input
+                    matInput
+                    formControlName="kegsPalletFormCtrl"
+                    required
+                  />
+                  <mat-error>{{ 'required' | translate }}</mat-error>
+                </mat-form-field>
+              </div>
+            </div>
           </article>
           <button matStepperNext type="button" class="arrow" alt="next step">
             &#10132;

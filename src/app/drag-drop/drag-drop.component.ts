@@ -21,7 +21,7 @@ export class DragDropComponent {
     {
       name: 'Smoking',
       category: 'prohibited',
-      img: '../../assets/svg/smoking.svg'
+      img: '../../assets/svg/dragdrop/smoking.svg'
     },
     {
       name: 'Headphones',
@@ -31,7 +31,7 @@ export class DragDropComponent {
     {
       name: 'Alcohol',
       category: 'prohibited',
-      img: '../../assets/svg/alcohol.svg'
+      img: '../../assets/svg/dragdrop/alcohol.svg'
     },
     {
       name: 'Helmet',
@@ -41,7 +41,7 @@ export class DragDropComponent {
     {
       name: 'Running',
       category: 'prohibited',
-      img: '../../assets/svg/running.svg'
+      img: '../../assets/svg/dragdrop/running.svg'
     },
     {
       name: 'Face Mask',
@@ -51,7 +51,7 @@ export class DragDropComponent {
     {
       name: 'Drugs',
       category: 'prohibited',
-      img: '../../assets/svg/drugs.svg'
+      img: '../../assets/svg/dragdrop/drugs.svg'
     },
     {
       name: 'Safety boots',
@@ -61,7 +61,7 @@ export class DragDropComponent {
     {
       name: 'Explosives',
       category: 'prohibited',
-      img: '../../assets/svg/explosives.svg'
+      img: '../../assets/svg/dragdrop/explosives.svg'
     },
     {
       name: 'Yellow Vest',
@@ -71,7 +71,7 @@ export class DragDropComponent {
     {
       name: 'Animals',
       category: 'prohibited',
-      img: '../../assets/svg/animals.svg'
+      img: '../../assets/svg/dragdrop/animals.svg'
     }
   ];
 
