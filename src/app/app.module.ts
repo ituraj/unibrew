@@ -39,9 +39,6 @@ import { NgxPrintModule } from 'ngx-print';
 
 import { AppComponent } from './app.component';
 import { FlagsComponent } from './flags/flags.component';
-import { ArrivalComponent } from './arrival/arrival.component';
-import { DepartureComponent } from './departure/departure.component';
-import { PrintComponent } from './print/print.component';
 import { SecondaryFormComponent } from './secondary-form/secondary-form.component';
 import { DriverListComponent } from './secondary-form/driver-list/driver-list.component';
 import { DriverComponent } from './secondary-form/driver/driver.component';
@@ -70,9 +67,6 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   declarations: [
     AppComponent,
     FlagsComponent,
-    ArrivalComponent,
-    DepartureComponent,
-    PrintComponent,
     SecondaryFormComponent,
     DriverListComponent,
     DriverComponent,

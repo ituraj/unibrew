@@ -61,7 +61,9 @@
 
 /* ------------------- Form Group 2[truck inspection] ----------------*/
 
-/* Remember to scale and image */
+.inspected-truck {
+  height: 25rem;
+}
 
 /* ------------------- Form Group 3[transportation number] ----------------*/
 
@@ -100,4 +102,27 @@
 }
 .trailer-container {
   padding: 4rem;
+}
+
+/* ------------------- Form Group 5[Arrival->Returning Goods] ----------------*/
+
+.pallet {
+  width: 20rem;
+}
+
+.pallets-wrapper {
+  display: grid;
+  width: 100%;
+  background-color: aqua;
+  grid-template-columns: repeat(3, 1fr);
+  height: calc(100% - 140px);
+  align-items: center;
+  justify-items: center;
+}
+.pallet-container {
+  display: grid;
+  justify-items: center;
+  grid-template-rows: repeat(2, max-content);
+  grid-gap: 2rem;
+  background: pink;
 }
