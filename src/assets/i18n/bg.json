@@ -1,4 +1,5 @@
 {
+  "chooseForm": "изберете формуляр",
   "safety": "Правила за безопасност",
   "transportation": "Транспортна информация",
   "transportNumber": "Номер на транспорта",
@@ -8,8 +9,9 @@
   "departure": "Отпътуване",
   "empty": "Празен трейлър",
   "return": "Върнати стоки",
+  "returnWhat": "Какво се връщате?",
   "load": "Зареждане",
-  "collect": "Collect Loaded",
+  "collect": "Съберете заредени",
   "thanks": "Благодаря",
   "print": "Печат...",
   "driversRegister": "Регистър на драйверите",

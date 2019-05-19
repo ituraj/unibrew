@@ -3,7 +3,7 @@
 .form-group1 {
   height: 100%;
   width: 100%;
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 .mat-button-wrapper {
@@ -14,7 +14,7 @@
   height: calc(100% - 140px); /* double of h2 hight  */
   align-content: center;
   justify-content: center;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 /* ------------------- Form Group 1 [safety]----------------*/
@@ -75,7 +75,7 @@
   align-content: center;
   grid-gap: 2rem;
   grid-template-rows: repeat(3, max-content);
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 /* ------------------- Form Group 4[Arrival | Departure] ----------------*/
@@ -85,7 +85,7 @@
   justify-items: center;
   grid-template-rows: repeat(2, max-content);
   grid-gap: 5rem;
-  background: pink;
+  /* background: pink; */
 }
 .warehouse-img {
   max-width: 50rem;
@@ -117,7 +117,7 @@
 .pallets-wrapper {
   display: grid;
   width: 100%;
-  background-color: aqua;
+  /* background-color: aqua; */
   grid-template-columns: repeat(3, 1fr);
   height: calc(100% - 140px);
   align-items: center;
@@ -128,5 +128,13 @@
   justify-items: center;
   grid-template-rows: repeat(2, max-content);
   grid-gap: 2rem;
-  background: pink;
+  /* background: pink; */
+}
+
+/* ------------------- Form Group 8[Print] ----------------*/
+
+.print-wraper {
+  display: grid;
+  justify-items: center;
+  align-content: center;
 }

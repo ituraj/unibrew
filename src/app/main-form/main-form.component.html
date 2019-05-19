@@ -12,7 +12,7 @@
             &#10132;
           </button>
           <article class="form-group1">
-            <h2>Choose form</h2>
+            <h2>{{ 'chooseForm' | translate }}</h2>
             <mat-button-toggle-group
               aria-label="Select an option"
               formControlName="formTypeFormCtrl"
@@ -26,7 +26,7 @@
                   type="button"
                   alt="next step"
                 >
-                  Main Form
+                  {{ 'orderTreatment' | translate }}
                 </button>
               </mat-button-toggle>
               <mat-button-toggle
@@ -34,7 +34,7 @@
                 routerLink="/drivers-register"
               >
                 <button mat-flat-button color="primary">
-                  Secondary Form
+                  {{ 'driversRegister' | translate }}
                 </button>
               </mat-button-toggle>
             </mat-button-toggle-group>
@@ -85,12 +85,14 @@
             &#10132;
           </button>
           <article class="article">
-            <h2>Truck Inspection</h2>
+            <h2>{{ 'inspectionPoints' | translate }}</h2>
+
             <img
               class="inspected-truck"
               src="../../assets/svg/truckInspection.svg"
               alt="truck inspection image"
             />
+            <h3>{{ 'damageCheck' | translate }}</h3>
             <mat-button-toggle-group
               aria-label="Select an option"
               formControlName="truckInspectionFormCtrl"
@@ -158,7 +160,7 @@
       </mat-step>
 
       <mat-step formGroupName="4" [stepControl]="formArray?.get([4])">
-        <section class="section">
+        <section class="section-mod">
           <button matStepperPrevious class="arrow back" alt="previous step">
             &#10132;
           </button>
@@ -203,20 +205,11 @@
               </article>
             </mat-button-toggle-group>
           </article>
-          <!-- <button
-            matStepperNext
-            type="button"
-            class="arrow"
-            alt="next step"
-            disabled
-          >
-            &#10132;
-          </button> -->
         </section>
       </mat-step>
 
       <mat-step formGroupName="5" [stepControl]="formArray?.get([5])">
-        <section class="section">
+        <section class="section-mod">
           <button matStepperPrevious class="arrow back" alt="previous step">
             &#10132;
           </button>
@@ -237,7 +230,7 @@
                     color="primary"
                     (click)="startPrinting()"
                   >
-                    Empty
+                    {{ 'empty' | translate }}
                   </button>
                 </mat-button-toggle>
               </article>
@@ -252,21 +245,12 @@
                 </a>
                 <mat-button-toggle value="Returvarer">
                   <button matStepperNext mat-flat-button color="primary">
-                    Returning goods
+                    {{ 'return' | translate }}
                   </button>
                 </mat-button-toggle>
               </article>
             </mat-button-toggle-group>
           </article>
-          <!-- <button
-            matStepperNext
-            type="button"
-            class="arrow"
-            alt="next step"
-            disabled
-          >
-            &#10132;
-          </button> -->
         </section>
       </mat-step>
 
@@ -276,7 +260,7 @@
             &#10132;
           </button>
           <article>
-            <h2>What are you returning?</h2>
+            <h2>{{ 'returnWhat' | translate }}</h2>
             <div class="pallets-wrapper">
               <div class="pallet-container">
                 <img
@@ -285,7 +269,7 @@
                   alt="sodas pallets"
                 />
                 <mat-form-field>
-                  <mat-label>No. of pallets</mat-label>
+                  <mat-label>{{ 'palletsNumber' | translate }}</mat-label>
                   <input matInput formControlName="sodasPalletFormCtrl" />
                 </mat-form-field>
               </div>
@@ -296,7 +280,7 @@
                   alt="beer pallets"
                 />
                 <mat-form-field>
-                  <mat-label>No. of pallets</mat-label>
+                  <mat-label>{{ 'palletsNumber' | translate }}</mat-label>
                   <input matInput formControlName="beerPalletFormCtrl" />
                 </mat-form-field>
               </div>
@@ -307,7 +291,7 @@
                   alt="kegs pallets"
                 />
                 <mat-form-field>
-                  <mat-label>No. of pallets</mat-label>
+                  <mat-label>{{ 'palletsNumber' | translate }}</mat-label>
                   <input matInput formControlName="kegsPalletFormCtrl" />
                 </mat-form-field>
               </div>
@@ -325,7 +309,7 @@
       </mat-step>
 
       <mat-step formGroupName="7" [stepControl]="formArray?.get([7])">
-        <section class="section">
+        <section class="section-mod">
           <button (click)="move(4)" class="arrow back" alt="previous step">
             &#10132;
           </button>
@@ -347,7 +331,7 @@
                     matStepperNext
                     (click)="startPrinting()"
                   >
-                    Load
+                    {{ 'load' | translate }}
                   </button>
                 </mat-button-toggle>
               </article>
@@ -367,19 +351,16 @@
                     matStepperNext
                     (click)="startPrinting()"
                   >
-                    Collect Loaded
+                    {{ 'collect' | translate }}
                   </button>
                 </mat-button-toggle>
               </article>
             </mat-button-toggle-group>
           </article>
-          <!-- <button matStepperNext type="button" class="arrow" alt="next step" disabled>
-            &#10132;
-          </button> -->
         </section>
       </mat-step>
       <mat-step formGroupName="8" [stepControl]="formArray?.get([8])">
-        <section class="section">
+        <section class="print-wraper">
           <article>
             <h2>{{ 'print' | translate }}</h2>
             <mat-button-toggle-group

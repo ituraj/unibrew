@@ -191,6 +191,14 @@
   </section>
 </div>
 
-<button [useExistingCss]="true" printSectionId="print-section" ngxPrint>
-  print
+<button
+  [useExistingCss]="true"
+  mat-flat-button
+  color="primary"
+  printSectionId="print-section"
+  ngxPrint
+  #myDiv
+  (click)="triggerFalseClick()"
+>
+  PRINT
 </button>

@@ -1,4 +1,5 @@
 {
+  "chooseForm": "Vælg formular",
   "safety": "Sikkerhedsregler",
   "transportation": "Transportoplysninger",
   "transportNumber": "Transportnummer",
@@ -8,6 +9,7 @@
   "departure": "Afgang",
   "empty": "Tøm Trailer",
   "return": "Returvarer",
+  "returnWhat": "Hvad vender du tilbage?",
   "load": "Læsse",
   "collect": "Saml Lastet",
   "thanks": "Mange Tak",
@@ -24,7 +26,7 @@
   "deliveryNumber": "Leveringsnummer",
   "palletsNumber": "Antal Paller",
   "inspected": "Inspiceret og indlæst af",
-  "inspectionPoints": "Punkt inspektion af trailer",
+  "inspectionPoints": "lastbil inspektion",
   "damageCheck": "Er traileren tjekket for skade?",
   "ceiling": "Loft",
   "bottom": "Bund",
