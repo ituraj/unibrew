@@ -92,7 +92,7 @@
 }
 
 .truck {
-  height: 7rem;
+  height: 9rem;
 }
 
 /* ------------------- Form Group 5[Arrival] ----------------*/
@@ -101,7 +101,11 @@
   height: 20rem;
 }
 .trailer-container {
-  padding: 4rem;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: repeat(2, max-content);
+  grid-gap: 5rem;
+  padding: 2rem;
 }
 
 /* ------------------- Form Group 5[Arrival->Returning Goods] ----------------*/
