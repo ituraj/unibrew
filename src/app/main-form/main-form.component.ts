@@ -1,6 +1,5 @@
 import { Component, OnInit, VERSION, ViewChild } from '@angular/core';
 import {
-  NgForm,
   AbstractControl,
   FormBuilder,
   FormGroup,
@@ -127,11 +126,16 @@ export class MainFormComponent implements OnInit {
   onSubmit() {
     console.log(this.formGroup.value);
     let data = Object.assign({}, this.formGroup.value);
+    let timeCreated = new Date();
+    let timeUpdated = new Date();
     if (this.formGroup.value.id == null) {
-      this.firestore.collection('main-form').add(data);
+      this.firestore.collection('main-form').add({ data, timeCreated });
     } else {
-      this.firestore.doc('main-form/' + this.formGroup.value.id).update(data);
+      this.firestore
+        .doc('main-form/' + this.formGroup.value.id)
+        .update({ data, timeUpdated });
     }
+    console.log(data);
   }
   move(index: number) {
     this.stepper.selectedIndex = index;

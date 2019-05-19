@@ -10,6 +10,7 @@ import { AngularFirestore } from '@angular/fire/firestore';
 })
 export class PrintLayoutComponent implements OnInit {
   list: MainFormItem[];
+  today = Date.now();
   constructor(
     public service: MainFormService,
     public firestore: AngularFirestore
