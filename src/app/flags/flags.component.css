@@ -14,7 +14,7 @@
 
 .footer {
   display: grid;
-  grid-template-columns: repeat(3, max-content);
+  grid-template-columns: repeat(5, max-content);
   justify-content: center;
   padding-top: 3rem;
 }
