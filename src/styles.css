@@ -26,10 +26,10 @@ html {
   width: 100%;
 }
 
-img {
+/* img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 button,
 a:link,
@@ -131,47 +131,43 @@ button {
   background-color: #25ae88;
   align-self: center;
 }
-/* This we need to code so arrow will be dissable - for testing I just make dissable */
 
 .back {
   transform: rotate(180deg);
-}
-
-/*--------------- MAIN ----------------- */
-main {
-  display: grid;
-  width: 100%;
-  min-height: 100vh;
-  justify-items: center;
-  align-items: center;
-  padding: 3.5rem 7.5rem;
 }
 
 /*--------------- SECTION ----------------- */
 .section-mod,
 .section {
   display: grid;
-  width: 100%;
-  min-height: 80vh;
+  max-width: 100%;
+  min-height: 100vh;
   grid-template-columns: max-content auto max-content;
+  padding: 3.5rem 3.5rem;
 }
 
 /*--------------- when there is only 1 arrow ----------------- */
 .section-mod {
   grid-template-columns: max-content auto 7.5rem;
 }
+/*--------------- when there is no arrows----------------- */
+
+.section-print {
+  max-width: 100%;
+  min-height: 100vh;
+  grid-template-columns: auto;
+  padding: 3.5rem 3.5rem;
+}
 
 .article {
   display: grid;
-  justify-items: center;
-  align-content: center;
-  grid-gap: 4rem;
-  grid-template-rows: repeat(2, max-content);
+  grid-template-rows: max-content auto;
 }
-.article-secondary {
+.article-content {
   display: grid;
   justify-items: center;
   align-content: center;
+  grid-gap: 2rem;
 }
 
 /*----------------- INPUT ------------------------- */
@@ -182,9 +178,12 @@ input.mat-input-element {
 
 div.mat-form-field-infix {
   font-size: 1.4rem;
-  min-width: 30rem;
   max-width: 100%;
 }
+section.input-fix div.mat-form-field-infix {
+  min-width: 30rem;
+}
+
 .input-wraper {
   min-height: 7rem;
 }
@@ -223,4 +222,8 @@ div.mat-horizontal-stepper-header-container {
 }
 .secondary-form-icon {
   font-size: 2rem;
+}
+button {
+  font-size: 2rem;
+  line-height: 1.5;
 }

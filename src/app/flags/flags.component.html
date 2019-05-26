@@ -1,58 +1,72 @@
-<section class="flags-wrapper">
-  <article class="flags-container">
-    <a (click)="switchLanguage('dk')" routerLink="/main-form">
-      <img class="flag" src="../../assets/svg/flags/da.svg" alt="Danish flag" />
-      <h3>
-        Dansk
-      </h3>
-    </a>
-    <a (click)="switchLanguage('en')" routerLink="/main-form">
-      <img
-        class="flag"
-        src="../../assets/svg/flags/en.svg"
-        alt="British flag"
-      />
-      <h3>
-        English
-      </h3>
-    </a>
-    <a (click)="switchLanguage('de')" routerLink="/main-form">
-      <img class="flag" src="../../assets/svg/flags/de.svg" alt="German flag" />
-      <h3>
-        Deutsch
-      </h3>
-    </a>
-    <a (click)="switchLanguage('pl')" routerLink="/main-form">
-      <img class="flag" src="../../assets/svg/flags/pl.svg" alt="Polish flag" />
-      <h3>
-        Polski
-      </h3>
-    </a>
-    <a (click)="switchLanguage('ro')" routerLink="/main-form">
-      <img
-        class="flag"
-        src="../../assets/svg/flags/ro.svg"
-        alt="Romanian flag"
-      />
-      <h3>Românesc</h3>
-    </a>
-    <a (click)="switchLanguage('bg')" routerLink="/main-form">
-      <img
-        class="flag"
-        src="../../assets/svg/flags/bg.svg"
-        alt="Bulgarian flag"
-      />
-      <h3>български</h3>
-    </a>
-  </article>
-</section>
+<div class="flags-container">
+  <section>
+    <article class="flags-grid">
+      <a (click)="switchLanguage('dk')" routerLink="/main-form">
+        <img
+          class="flag"
+          src="../../assets/svg/flags/da.svg"
+          alt="Danish flag"
+        />
+        <h3>
+          Dansk
+        </h3>
+      </a>
+      <a (click)="switchLanguage('en')" routerLink="/main-form">
+        <img
+          class="flag"
+          src="../../assets/svg/flags/en.svg"
+          alt="British flag"
+        />
+        <h3>
+          English
+        </h3>
+      </a>
+      <a (click)="switchLanguage('de')" routerLink="/main-form">
+        <img
+          class="flag"
+          src="../../assets/svg/flags/de.svg"
+          alt="German flag"
+        />
+        <h3>
+          Deutsch
+        </h3>
+      </a>
+      <a (click)="switchLanguage('pl')" routerLink="/main-form">
+        <img
+          class="flag"
+          src="../../assets/svg/flags/pl.svg"
+          alt="Polish flag"
+        />
+        <h3>
+          Polski
+        </h3>
+      </a>
+      <a (click)="switchLanguage('ro')" routerLink="/main-form">
+        <img
+          class="flag"
+          src="../../assets/svg/flags/ro.svg"
+          alt="Romanian flag"
+        />
+        <h3>Românesc</h3>
+      </a>
+      <a (click)="switchLanguage('bg')" routerLink="/main-form">
+        <img
+          class="flag"
+          src="../../assets/svg/flags/bg.svg"
+          alt="Bulgarian flag"
+        />
+        <h3>български</h3>
+      </a>
+    </article>
+  </section>
 
-<footer class="footer">
-  <button mat-button routerLink="/admin-login">Admin</button>
-  <span></span>
-  <button mat-button routerLink="/quiz-intro">Quiz</button>
-  <span></span>
-  <button mat-button routerLink="/workplace-safety">
-    Workplace Safety
-  </button>
-</footer>
+  <footer class="footer">
+    <button mat-button routerLink="/admin-login">Admin</button>
+    <span></span>
+    <button mat-button routerLink="/quiz-intro">Quiz</button>
+    <span></span>
+    <button mat-button routerLink="/workplace-safety">
+      Workplace Safety
+    </button>
+  </footer>
+</div>

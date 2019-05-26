@@ -1,29 +1,10 @@
 /* ------------------- Form Group 0 ----------------*/
 
 .form-group1 {
-  height: 100%;
-  width: 100%;
-  /* background-color: pink; */
-}
-
-.mat-button-wrapper {
-  display: grid;
-  grid-template-columns: max-content max-content;
-  width: 100%;
-  height: 80%; /* fallback:  */
-  height: calc(100% - 140px); /* double of h2 hight  */
-  align-content: center;
-  justify-content: center;
-  /* background-color: yellow; */
+  grid-gap: 4rem;
 }
 
 /* ------------------- Form Group 1 [safety]----------------*/
-
-.safety-container {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-}
 
 .mat-button-toggle {
   color: #d5d3d2;
@@ -40,15 +21,12 @@
 /* ---- Safety items[0] ------ */
 .safety-items {
   display: grid;
-  grid-template-columns: repeat(6, max-content);
-  grid-gap: 1rem;
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .item-container {
   display: grid;
   grid-template-rows: max-content max-content;
-  grid-gap: 1rem;
-  padding: 0 1.25rem;
 }
 
 .safety-item {
@@ -71,17 +49,8 @@
   height: 25rem;
 }
 
-/* ------------------- Form Group 3[transportation number] ----------------*/
-
-.form-fields-wraper {
-  display: grid;
-  height: 80%; /* fallback:  */
-  height: calc(100% - 140px); /* double of h2 hight  */
-  justify-items: center;
-  align-content: center;
+.inspected-grid {
   grid-gap: 2rem;
-  grid-template-rows: repeat(3, max-content);
-  /* background-color: aqua; */
 }
 
 /* ------------------- Form Group 4[Arrival | Departure] ----------------*/
@@ -91,14 +60,13 @@
   justify-items: center;
   grid-template-rows: repeat(2, max-content);
   grid-gap: 5rem;
-  /* background: pink; */
 }
 .warehouse-img {
-  max-width: 50rem;
+  max-width: 40rem;
 }
 
 .truck {
-  height: 9rem;
+  height: 7rem;
 }
 
 /* ------------------- Form Group 5[Arrival] ----------------*/
@@ -117,30 +85,25 @@
 /* ------------------- Form Group 5[Arrival->Returning Goods] ----------------*/
 
 .pallet {
-  width: 20rem;
+  width: 18rem;
 }
 
 .pallets-wrapper {
   display: grid;
   width: 100%;
-  /* background-color: aqua; */
   grid-template-columns: repeat(3, 1fr);
-  height: calc(100% - 140px);
-  align-items: center;
-  justify-items: center;
 }
 .pallet-container {
   display: grid;
   justify-items: center;
   grid-template-rows: repeat(2, max-content);
   grid-gap: 2rem;
-  /* background: pink; */
 }
 
-/* ------------------- Form Group 8[Print] ----------------*/
+/* ------------------- Form Group 8[Print] ----------------
 
 .print-wraper {
   display: grid;
   justify-items: center;
   align-content: center;
-}
+} */
