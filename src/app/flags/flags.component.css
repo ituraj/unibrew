@@ -24,3 +24,14 @@ footer.footer span {
   width: 1px;
   align-self: center;
 }
+
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .flags-container {
+    display: grid;
+    width: 100%;
+    min-height: calc(100vh - 96px);
+    justify-items: center;
+    align-items: center;
+  }
+}
