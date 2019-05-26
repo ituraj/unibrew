@@ -1,7 +1,8 @@
 .drag-drop {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-gap: 4rem;
+  grid-gap: 2rem;
+  padding: 2rem;
 }
 
 .card {
@@ -14,12 +15,15 @@
 .drop-area,
 .list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  height: 45rem;
-  min-width: 30rem;
+  grid-template-columns: 1fr max-content 1fr;
+  height: 40rem;
+  min-width: 27vw;
   justify-items: center;
   align-items: center;
 }
+
 .icon-drag {
-  height: 10rem;
+  min-width: 6rem;
+  width: 7.5vw;
+  padding: 1rem;
 }

@@ -1,11 +1,11 @@
-.login-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
+.login-wrapper {
+  padding: 3rem;
 }
 
-.login-card {
-  padding: 3rem;
+.login-content {
+  display: grid;
+}
+.actions-content {
+  width: 100%;
+  text-align: center;
 }

@@ -45,3 +45,33 @@ td:nth-child(7) i.material-icons {
   color: #ff9533;
 }
 /*-------------------------------------------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  thead th:first-child,
+  tbody tr td:first-child {
+    padding-left: 1rem;
+  }
+
+  thead th:last-child,
+  tbody tr td:last-child {
+    padding-right: 1rem;
+  }
+
+  th {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  th,
+  td {
+    padding: 1rem 0.15rem;
+  }
+  th {
+    padding: 2rem 0.15rem;
+  }
+
+  td:nth-child(7) i.material-icons,
+  td:nth-child(8) i.material-icons {
+    font-size: 3rem;
+  }
+}

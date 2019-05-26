@@ -30,7 +30,7 @@
 }
 
 .safety-item {
-  width: 8vw;
+  width: 9vw;
   justify-self: center;
 }
 .worker {
@@ -99,11 +99,3 @@
   grid-template-rows: repeat(2, max-content);
   grid-gap: 2rem;
 }
-
-/* ------------------- Form Group 8[Print] ----------------
-
-.print-wraper {
-  display: grid;
-  justify-items: center;
-  align-content: center;
-} */

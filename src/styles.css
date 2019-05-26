@@ -114,7 +114,7 @@ button {
   color: #efefef;
   background-color: #25ae88;
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 1.4rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   border-radius: 2.5rem;
@@ -137,6 +137,7 @@ button {
 }
 
 /*--------------- SECTION ----------------- */
+
 .section-mod,
 .section {
   display: grid;
@@ -149,6 +150,17 @@ button {
 /*--------------- when there is only 1 arrow ----------------- */
 .section-mod {
   grid-template-columns: max-content auto 7.5rem;
+}
+
+/*--------------- when there is no arrows----------------- */
+
+.section-simple {
+  display: grid;
+  max-width: 100%;
+  min-height: 100vh;
+  justify-items: center;
+  align-items: center;
+  padding: 3.5rem 3.5rem;
 }
 /*--------------- when there is no arrows----------------- */
 
@@ -237,5 +249,18 @@ button {
     min-height: calc(100vh - 96px);
     grid-template-columns: max-content auto max-content;
     padding: 3.5rem 3.5rem;
+  }
+
+  button {
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+
+  .material-icons {
+    font-size: 5rem;
+    cursor: pointer;
+  }
+  section.input-fix div.mat-form-field-infix {
+    min-width: 20rem;
   }
 }
