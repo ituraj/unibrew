@@ -1,0 +1,17 @@
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.login-card {
+  padding: 3rem;
+}
+.login-card,
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

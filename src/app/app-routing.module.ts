@@ -9,6 +9,8 @@ import { QuizComponent } from './quiz/quiz.component';
 import { ResultComponent } from './result/result.component';
 import { MainFormComponent } from './main-form/main-form.component';
 import { PrintLayoutComponent } from './print-layout/print-layout.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
 
 const routes: Routes = [
   { path: '', component: FlagsComponent },
@@ -19,7 +21,9 @@ const routes: Routes = [
   { path: 'quiz', component: QuizComponent },
   { path: 'result', component: ResultComponent },
   { path: 'main-form', component: MainFormComponent },
-  { path: 'print-layout', component: PrintLayoutComponent }
+  { path: 'print-layout', component: PrintLayoutComponent },
+  { path: 'admin', component: AdminComponent },
+  { path: 'admin-login', component: AdminLoginComponent }
 ];
 
 @NgModule({
