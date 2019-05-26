@@ -1,5 +1,4 @@
 {
-  "chooseForm": "Wybierz Formularz",
   "safety": "Zasady Bezpieczeństwa",
   "transportation": "Informacje o Transporcie",
   "transportNumber": "Numer Transportu",
@@ -9,7 +8,6 @@
   "departure": "Odjazd",
   "empty": "Pusta Naczepa",
   "return": "Zwrot Towaru",
-  "returnWhat": "Co zostaje zwrócone?",
   "load": "Do Załadunku",
   "collect": "Odbiór Załadunku",
   "thanks": "Dziękujemy",
@@ -50,5 +48,7 @@
   "queueNumber": "Numer Kolejki",
   "edit": "Edytuj",
   "delete": "Usuń",
-  "submit": "Zatwierdź"
+  "submit": "Zatwierdź",
+  "chooseForm": "Wybierz Formularz",
+  "returnWhat": "Co zostaje zwrócone?"
 }

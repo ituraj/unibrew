@@ -1,5 +1,4 @@
 {
-  "chooseForm": "Choose form",
   "safety": "Safety Rules",
   "transportation": "Transport Information",
   "transportNumber": "Transport Number",
@@ -9,7 +8,6 @@
   "departure": "Departure",
   "empty": "Empty Trailer",
   "return": "Returning Goods",
-  "returnWhat": "What are you returning?",
   "load": "Load",
   "collect": "Collect Loaded",
   "thanks": "Thank You",
@@ -50,5 +48,7 @@
   "queueNumber": "Queue Number",
   "edit": "Edit",
   "delete": "Delete",
-  "submit": "Submit"
+  "submit": "Submit",
+  "chooseForm": "Choose form",
+  "returnWhat": "What are you returning?"
 }

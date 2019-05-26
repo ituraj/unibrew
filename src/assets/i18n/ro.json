@@ -1,5 +1,4 @@
 {
-  "chooseForm": "Alegeți Formularul",
   "safety": "Reguli de siguranță",
   "transportation": "Informații despre transport",
   "transportNumber": "Numărul de transport",
@@ -9,7 +8,6 @@
   "departure": "Plecare",
   "Empty": "Trailer Gol",
   "return": "Bunuri returnate",
-  "returnWhat": "Ce te întorci?",
   "load": "Încărcare",
   "collect": "Colectați încărcate",
   "thanks": "Mersi Multumesc",
@@ -50,5 +48,7 @@
   "queueNumber": "Număr de coadă",
   "edit": "Edita",
   "delete": "Șterge",
-  "submit": "înainta"
+  "submit": "înainta",
+  "chooseForm": "Alegeți Formularul",
+  "returnWhat": "Ce te întorci?"
 }

@@ -1,5 +1,4 @@
 {
-  "chooseForm": "Vælg formular",
   "safety": "Sikkerhedsregler",
   "transportation": "Transportoplysninger",
   "transportNumber": "Transportnummer",
@@ -9,7 +8,6 @@
   "departure": "Afgang",
   "empty": "Tøm Trailer",
   "return": "Returvarer",
-  "returnWhat": "Hvad vender du tilbage?",
   "load": "Læsse",
   "collect": "Saml Lastet",
   "thanks": "Mange Tak",
@@ -50,5 +48,7 @@
   "queueNumber": "Kø Nummer",
   "edit": "Redigere",
   "delete": "Slette",
-  "submit": "Indsend"
+  "submit": "Indsend",
+  "chooseForm": "Vælg formular",
+  "returnWhat": "Hvad vender du tilbage?"
 }

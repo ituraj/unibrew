@@ -1,5 +1,4 @@
 {
-  "chooseForm": "Form wählen",
   "safety": "Sicherheitsregeln",
   "transportation": "Transportinformationen",
   "transportNumber": "Transportnummer",
@@ -9,7 +8,6 @@
   "departure": "Abfahrt",
   "empty": "Leerer Trailer",
   "return": "Warenrückgabe",
-  "returnWhat": "Was kehrst du zurück?",
   "load": "Laden",
   "collect": "Geladen sammeln",
   "thanks": "Vielen Dank",
@@ -50,5 +48,7 @@
   "queueNumber": "Warteschlangennummer",
   "edit": "Bearbeiten",
   "delete": "Löschen",
-  "submit": "Einreichen"
+  "submit": "Einreichen",
+  "chooseForm": "Form wählen",
+  "returnWhat": "Was kehrst du zurück?"
 }
