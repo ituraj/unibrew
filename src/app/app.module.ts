@@ -12,7 +12,11 @@ import {
   MatStepperModule,
   MatIconModule
 } from '@angular/material';
-import { MatButtonModule, MatCheckboxModule } from '@angular/material';
+import {
+  MatButtonModule,
+  MatCheckboxModule,
+  MatToolbarModule
+} from '@angular/material';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatRadioModule } from '@angular/material/radio';
@@ -42,6 +46,14 @@ import { FlagsComponent } from './flags/flags.component';
 import { SecondaryFormComponent } from './secondary-form/secondary-form.component';
 import { DriverListComponent } from './secondary-form/driver-list/driver-list.component';
 import { DriverComponent } from './secondary-form/driver/driver.component';
+import { DragDropComponent } from './drag-drop/drag-drop.component';
+import { QuizComponent } from './quiz/quiz.component';
+import { ResultComponent } from './result/result.component';
+import { QuizIntroComponent } from './quiz-intro/quiz-intro.component';
+import { MainFormComponent } from './main-form/main-form.component';
+import { PrintLayoutComponent } from './print-layout/print-layout.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { AdminComponent } from './admin/admin.component';
 
 // Routing
 
@@ -51,12 +63,6 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { DragDropComponent } from './drag-drop/drag-drop.component';
-import { QuizComponent } from './quiz/quiz.component';
-import { ResultComponent } from './result/result.component';
-import { QuizIntroComponent } from './quiz-intro/quiz-intro.component';
-import { MainFormComponent } from './main-form/main-form.component';
-import { PrintLayoutComponent } from './print-layout/print-layout.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -75,7 +81,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     ResultComponent,
     QuizIntroComponent,
     MainFormComponent,
-    PrintLayoutComponent
+    PrintLayoutComponent,
+    AdminLoginComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
@@ -96,6 +104,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     MatButtonToggleModule,
     MatGridListModule,
     MatStepperModule,
+    MatToolbarModule,
     DragDropModule,
     HttpClientModule,
     NgxPrintModule,
