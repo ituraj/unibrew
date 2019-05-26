@@ -81,12 +81,12 @@ export class MainFormComponent implements OnInit {
           formTypeFormCtrl: ['', Validators.required]
         }),
         this.formBuilder.group({
-          glassesFormCtrl: ['', Validators.required],
-          headphonesFormCtrl: ['', Validators.required],
-          helmetFormCtrl: ['', Validators.required],
-          maskFormCtrl: ['', Validators.required],
-          bootsFormCtrl: ['', Validators.required],
-          vestFormCtrl: ['', Validators.required]
+          glassesFormCtrl: ['NEJ', Validators.required],
+          headphonesFormCtrl: ['NEJ', Validators.required],
+          helmetFormCtrl: ['NEJ', Validators.required],
+          maskFormCtrl: ['NEJ', Validators.required],
+          bootsFormCtrl: ['NEJ', Validators.required],
+          vestFormCtrl: ['NEJ', Validators.required]
         }),
         this.formBuilder.group({
           truckInspectionFormCtrl: ['', Validators.required]

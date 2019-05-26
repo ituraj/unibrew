@@ -28,6 +28,7 @@
 .mat-button-toggle {
   color: #d5d3d2;
 }
+
 .mat-button-toggle-checked:nth-child(1) i {
   color: #25ae88;
 }
@@ -57,6 +58,11 @@
 .worker {
   height: 40vh;
   justify-self: center;
+}
+
+.icon-container {
+  align-items: center;
+  display: grid;
 }
 
 /* ------------------- Form Group 2[truck inspection] ----------------*/

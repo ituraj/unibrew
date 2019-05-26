@@ -57,16 +57,42 @@
               />
               <section class="safety-items">
                 <div class="item-container" *ngFor="let item of safetyItems">
-                  <img src="{{ item.img }}" class="safety-item" />
+                  <mat-button-toggle-group
+                    class="icon-container"
+                    formControlName="{{ item.formControlName }}"
+                  >
+                    <mat-button-toggle
+                      value="JA"
+                      (click)="item.isActive = !item.isActive"
+                    >
+                      <img src="{{ item.img }}" class="safety-item" />
+                    </mat-button-toggle>
+                  </mat-button-toggle-group>
                   <mat-button-toggle-group
                     aria-label="Select an option"
                     formControlName="{{ item.formControlName }}"
                   >
-                    <mat-button-toggle value="yes">
-                      <i class="material-icons" alt="yes">check_circle</i>
+                    <mat-button-toggle
+                      value="JA"
+                      (click)="item.isActive = true"
+                    >
+                      <i
+                        class="material-icons"
+                        alt="yes"
+                        [style.color]="item.isActive ? '#25ae88' : '#d5d3d2'"
+                        >check_circle</i
+                      >
                     </mat-button-toggle>
-                    <mat-button-toggle value="no">
-                      <i class="no material-icons" alt="no">cancel</i>
+                    <mat-button-toggle
+                      value="NEJ"
+                      (click)="item.isActive = false"
+                    >
+                      <i
+                        class="no material-icons"
+                        alt="no"
+                        [style.color]="!item.isActive ? '#d75a4a' : '#d5d3d2'"
+                        >cancel</i
+                      >
                     </mat-button-toggle>
                   </mat-button-toggle-group>
                 </div>
@@ -97,10 +123,10 @@
               aria-label="Select an option"
               formControlName="truckInspectionFormCtrl"
             >
-              <mat-button-toggle value="yes">
+              <mat-button-toggle value="JA">
                 <i class="material-icons" alt="yes">check_circle</i>
               </mat-button-toggle>
-              <mat-button-toggle value="no">
+              <mat-button-toggle value="NEJ">
                 <i class="no material-icons" alt="no">cancel</i>
               </mat-button-toggle>
             </mat-button-toggle-group>

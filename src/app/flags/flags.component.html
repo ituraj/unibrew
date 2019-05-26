@@ -1,5 +1,5 @@
-<main>
-  <section class="flags-container">
+<section class="flags-wrapper">
+  <article class="flags-container">
     <a (click)="switchLanguage('dk')" routerLink="/main-form">
       <img class="flag" src="../../assets/svg/flags/da.svg" alt="Danish flag" />
       <h3>
@@ -44,14 +44,10 @@
       />
       <h3>български</h3>
     </a>
-  </section>
-</main>
+  </article>
+</section>
 
 <footer class="footer">
-  <button mat-button routerLink="/drivers-register">
-    Drivers Register
-  </button>
-  <span></span>
   <button mat-button routerLink="/quiz-intro">Quiz</button>
   <span></span>
   <button mat-button routerLink="/workplace-safety">
