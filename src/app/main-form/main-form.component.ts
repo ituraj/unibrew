@@ -92,10 +92,22 @@ export class MainFormComponent implements OnInit {
           truckInspectionFormCtrl: ['', Validators.required]
         }),
         this.formBuilder.group({
-          fullNameFormCtrl: ['', Validators.required],
-          companyNameFormCtrl: ['', Validators.required],
-          transportationNumberFormCtrl: ['', Validators.required],
-          trailerNumberFormCtrl: ['', Validators.required]
+          fullNameFormCtrl: [
+            '',
+            Validators.compose([Validators.required, Validators.minLength(3)])
+          ],
+          companyNameFormCtrl: [
+            '',
+            Validators.compose([Validators.required, Validators.minLength(3)])
+          ],
+          transportationNumberFormCtrl: [
+            '',
+            Validators.compose([Validators.required, Validators.minLength(3)])
+          ],
+          trailerNumberFormCtrl: [
+            '',
+            Validators.compose([Validators.required, Validators.minLength(3)])
+          ]
         }),
         this.formBuilder.group({
           arrivalDepartureFormCtrl: ['', Validators.required]

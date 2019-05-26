@@ -1,22 +1,49 @@
 <section class="login-section">
   <mat-card class="login-card">
     <mat-card-title>Admin Login</mat-card-title>
-    <mat-card-content>
-      <form class="login-form">
+
+    <form
+      class="login-form"
+      [formGroup]="formdata"
+      (ngSubmit)="onClickSubmit(formdata.value)"
+    >
+      <mat-card-content>
         <mat-form-field class="full-width">
           <mat-label>Email</mat-label>
-          <input matInput placeholder="Email" name="email" required />
+          <input
+            matInput
+            placeholder="Email"
+            required
+            type="email"
+            name="emailid"
+            formControlName="emailid"
+          />
         </mat-form-field>
         <mat-form-field class="full-width">
           <mat-label>Password</mat-label>
-          <input matInput placeholder="Password" name="password" required />
+
+          <input
+            matInput
+            placeholder="Password"
+            name="password"
+            required
+            type="password"
+            formControlName="passwordFormCtrl"
+          />
         </mat-form-field>
-      </form>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-raised-button routerLink="/admin" color="primary">
-        LOGIN
-      </button>
-    </mat-card-actions>
+      </mat-card-content>
+      <mat-card-actions>
+        <button
+          type="submit"
+          [disabled]="!formdata.valid"
+          mat-raised-button
+          value="Log In"
+          color="primary"
+        >
+          Button
+        </button>
+      </mat-card-actions>
+    </form>
   </mat-card>
 </section>
+<p>Email entered is : {{ emailid }}</p>

@@ -147,7 +147,12 @@
             <div class="form-fields-wraper">
               <mat-form-field>
                 <mat-label>{{ 'fullName' | translate }}</mat-label>
-                <input matInput formControlName="fullNameFormCtrl" required />
+                <input
+                  matInput
+                  formControlName="fullNameFormCtrl"
+                  required
+                  maxlength="30"
+                />
                 <mat-error>{{ 'required' | translate }}</mat-error>
               </mat-form-field>
               <mat-form-field>
@@ -156,6 +161,7 @@
                   matInput
                   formControlName="companyNameFormCtrl"
                   required
+                  maxlength="20"
                 />
                 <mat-error>{{ 'required' | translate }}</mat-error>
               </mat-form-field>
@@ -165,6 +171,7 @@
                   matInput
                   formControlName="transportationNumberFormCtrl"
                   required
+                  maxlength="10"
                 />
                 <mat-error>{{ 'required' | translate }}</mat-error>
               </mat-form-field>
@@ -174,6 +181,7 @@
                   matInput
                   formControlName="trailerNumberFormCtrl"
                   required
+                  maxlength="10"
                 />
                 <mat-error>{{ 'required' | translate }}</mat-error>
               </mat-form-field>
