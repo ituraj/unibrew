@@ -6,15 +6,20 @@
 
 /* ------------------- Form Group 1 [safety]----------------*/
 
+.base,
 .mat-button-toggle {
   color: #d5d3d2;
+  font-size: 4rem;
+  cursor: pointer;
 }
 
-.mat-button-toggle-checked:nth-child(1) i {
+.checked {
   color: #25ae88;
+  font-size: 4rem;
+  cursor: pointer;
 }
 
-.mat-button-toggle-checked:nth-child(2) i {
+.unchecked {
   color: #d75a4a;
 }
 
@@ -47,10 +52,17 @@
 
 .inspected-truck {
   height: 25rem;
+  cursor: pointer;
 }
 
 .inspected-grid {
+  display: grid;
+  justify-items: center;
   grid-gap: 2rem;
+}
+.toggle-group-wrapper {
+  display: grid;
+  grid-template-columns: max-content max-content;
 }
 
 /* ------------------- Form Group 4[Arrival | Departure] ----------------*/
@@ -60,7 +72,9 @@
   justify-items: center;
   grid-template-rows: repeat(2, max-content);
   grid-gap: 5rem;
+  width: 100%;
 }
+
 .warehouse-img {
   max-width: 40rem;
 }
@@ -69,7 +83,7 @@
   height: 7rem;
 }
 .truck-departure {
-  height: 8rem;
+  height: 7.6rem;
 }
 
 /* ------------------- Form Group 5[Arrival] ----------------*/
@@ -101,4 +115,9 @@
   justify-items: center;
   grid-template-rows: repeat(2, max-content);
   grid-gap: 2rem;
+}
+
+/* ------------------- Form Group 7[ Departure] ----------------*/
+.article-departure {
+  justify-items: stretch;
 }

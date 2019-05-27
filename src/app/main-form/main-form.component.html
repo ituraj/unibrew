@@ -80,7 +80,7 @@
                     <i
                       class="material-icons"
                       alt="yes"
-                      [style.color]="item.isActive ? '#25ae88' : '#d5d3d2'"
+                      [ngClass]="item.isActive ? 'checked' : 'base'"
                       >check_circle</i
                     >
                   </mat-button-toggle>
@@ -91,7 +91,7 @@
                     <i
                       class="no material-icons"
                       alt="no"
-                      [style.color]="!item.isActive ? '#d75a4a' : '#d5d3d2'"
+                      [ngClass]="!item.isActive ? 'unchecked' : 'base'"
                       >cancel</i
                     >
                   </mat-button-toggle>
@@ -113,23 +113,38 @@
         </button>
         <article class="article">
           <h2>{{ 'inspectionPoints' | translate }}</h2>
-          <section class="article-content inspected-grid">
-            <img
-              class="inspected-truck"
-              src="../../assets/svg/truckInspection.svg"
-              alt="truck inspection image"
-            />
-            <h3>{{ 'damageCheck' | translate }}</h3>
+          <section class="article-content">
             <mat-button-toggle-group
+              class=" inspected-grid"
               aria-label="Select an option"
               formControlName="truckInspectionFormCtrl"
             >
-              <mat-button-toggle value="JA">
-                <i class="material-icons" alt="yes">check_circle</i>
+              <mat-button-toggle value="JA" (click)="isActive = !isActive">
+                <img
+                  class="inspected-truck"
+                  src="../../assets/svg/truckInspection.svg"
+                  alt="truck inspection image"
+                />
               </mat-button-toggle>
-              <mat-button-toggle value="NEJ">
-                <i class="no material-icons" alt="no">cancel</i>
-              </mat-button-toggle>
+              <h3>{{ 'damageCheck' | translate }}</h3>
+              <div class="toggle-group-wrapper">
+                <mat-button-toggle value="JA" (click)="isActive = true">
+                  <i
+                    class="material-icons"
+                    alt="yes"
+                    [ngClass]="isActive ? 'checked' : 'base'"
+                    >check_circle</i
+                  >
+                </mat-button-toggle>
+                <mat-button-toggle value="NEJ" (click)="isActive = false">
+                  <i
+                    class="no material-icons"
+                    alt="no"
+                    [ngClass]="!isActive ? 'unchecked' : 'base'"
+                    >cancel</i
+                  >
+                </mat-button-toggle>
+              </div>
             </mat-button-toggle-group>
           </section>
         </article>
@@ -359,7 +374,7 @@
         </button>
         <article class="article">
           <h2>Departure Status</h2>
-          <section class="article-content">
+          <section class="article-content article-departure">
             <mat-button-toggle-group
               aria-label="Select an option"
               formControlName="departureFormCtrl"
@@ -386,7 +401,7 @@
                 <a routerLink="/departure">
                   <img
                     class="truck-departure"
-                    src="../../assets/svg/truckLeaving.svg"
+                    src="../../assets/svg/truckReverse.svg"
                     alt="truck leaving"
                   />
                 </a>
@@ -408,7 +423,6 @@
     </mat-step>
     <mat-step formGroupName="8" [stepControl]="formArray?.get([8])">
       <section class="section-simple">
-        <!-- <div></div> -->
         <article class="article">
           <h2>{{ 'print' | translate }}</h2>
           <section class="article-content">

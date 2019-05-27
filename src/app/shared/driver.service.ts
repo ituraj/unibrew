@@ -9,10 +9,6 @@ export class DriverService {
   formData: Driver;
 
   constructor(private firestore: AngularFirestore) {}
-  // getDrivers() {
-  //   return this.firestore.collection('drivers').snapshotChanges();
-  // }
-
   getDrivers() {
     return this.firestore
       .collection('drivers', ref => ref.orderBy('arrivalTime', 'desc'))
