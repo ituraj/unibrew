@@ -17,6 +17,7 @@
             name="emailid"
             formControlName="emailid"
           />
+          <mat-error>{{ 'required' | translate }}</mat-error>
         </mat-form-field>
         <mat-form-field>
           <mat-label>Password</mat-label>
@@ -28,6 +29,7 @@
             type="password"
             formControlName="passwordFormCtrl"
           />
+          <mat-error>{{ 'required' | translate }}</mat-error>
         </mat-form-field>
       </mat-card-content>
       <mat-card-actions class="actions-content">
@@ -44,4 +46,8 @@
       </mat-card-actions>
     </form>
   </mat-card>
+  <p class="login-helper">
+    Please type any <span>email</span> and <span>text</span> that is longer than
+    <span>3 characters</span> to validate the form
+  </p>
 </section>

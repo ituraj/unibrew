@@ -1,5 +1,5 @@
 .login-wrapper {
-  padding: 3rem;
+  padding: 4rem 6rem;
 }
 
 .login-content {
@@ -8,4 +8,11 @@
 .actions-content {
   width: 100%;
   text-align: center;
+}
+.login-helper {
+  color: #bdbdbd;
+}
+
+.login-helper span {
+  color: #25ae88;
 }

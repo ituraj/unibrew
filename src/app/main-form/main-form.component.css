@@ -68,6 +68,9 @@
 .truck {
   height: 7rem;
 }
+.truck-departure {
+  height: 8rem;
+}
 
 /* ------------------- Form Group 5[Arrival] ----------------*/
 
@@ -82,7 +85,7 @@
   padding: 2rem;
 }
 
-/* ------------------- Form Group 5[Arrival->Returning Goods] ----------------*/
+/* ------------------- Form Group 6[Arrival->Returning Goods] ----------------*/
 
 .pallet {
   width: 18rem;
