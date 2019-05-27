@@ -19,6 +19,7 @@ export class MainFormComponent implements OnInit {
   @ViewChild('stepper') stepper: MatStepper;
   ngVersion: string = VERSION.full;
   matVersion: string = '5.1.0';
+  isActive;
   safetyItems = [
     {
       name: 'Safety Glasses',
