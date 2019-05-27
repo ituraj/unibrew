@@ -128,16 +128,6 @@ export class MainFormComponent implements OnInit {
         })
       ])
     });
-
-    this.safetyFormGroup = this.formBuilder.group({
-      glassesFormCtrl: ['', Validators.required],
-      headphonesFormCtrl: ['', Validators.required]
-    });
-    this.trackingNumbersFormGroup = this.formBuilder.group({
-      fullNameFormCtrl: ['', Validators.required],
-      transportationNumberFormCtrl: ['', Validators.required],
-      trailerNumberFormCtrl: ['', Validators.required]
-    });
   }
 
   onSubmit() {

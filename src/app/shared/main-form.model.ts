@@ -11,7 +11,9 @@ export class MainFormItem {
   arrivalDepartureFormCtrl: string;
   fullNameFormCtrl: string;
   companyNameFormCtrl: string;
+  arrivalTypeFormCtrl: string;
   sodasPalletFormCtrl: string;
   beerPalletFormCtrl: string;
   kegsPalletFormCtrl: string;
+  departureFormCtrl: string;
 }

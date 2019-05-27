@@ -21,6 +21,8 @@
 
 .unchecked {
   color: #d75a4a;
+  font-size: 4rem;
+  cursor: pointer;
 }
 
 /* ---- Safety items[0] ------ */

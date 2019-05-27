@@ -228,13 +228,15 @@
               formControlName="arrivalDepartureFormCtrl"
             >
               <article class="truck-container">
-                <a routerLink="/arrival">
-                  <img
-                    class="truck"
-                    src="../../assets/svg/truckArriving.svg"
-                    alt="truck arriving"
-                  />
-                </a>
+                <mat-button-toggle value="Ankomst">
+                  <button matStepperNext>
+                    <img
+                      class="truck"
+                      src="../../assets/svg/truckArriving.svg"
+                      alt="truck arriving"
+                    />
+                  </button>
+                </mat-button-toggle>
                 <mat-button-toggle value="Ankomst">
                   <button matStepperNext mat-flat-button color="primary">
                     {{ 'arrival' | translate }}
@@ -243,13 +245,16 @@
               </article>
 
               <article class="truck-container">
-                <a routerLink="/departure">
+                <mat-button-toggle value="Afgang">
+                  <button (click)="move(7)"
+                  >
                   <img
                     class="truck"
                     src="../../assets/svg/truckLeaving.svg"
                     alt="truck leaving"
                   />
-                </a>
+                </button>
+                </mat-button-toggle>
                 <mat-button-toggle value="Afgang">
                   <button mat-flat-button color="primary" (click)="move(7)">
                     {{ 'departure' | translate }}
@@ -279,6 +284,8 @@
                   class="trailer"
                   src="../../assets/svg/trailerEmpty.svg"
                   alt="truck arriving"
+                  value="Tøm Trailer"
+                  (click)="startPrinting()"
                 />
                 <mat-button-toggle value="Tøm Trailer">
                   <button
@@ -292,13 +299,13 @@
               </article>
 
               <article class="trailer-container">
-                <a routerLink="/departure">
+                <button type="button" value="Returvarer" matStepperNext>
                   <img
                     class="trailer"
                     src="../../assets/svg/returningGoods.svg"
                     alt="truck leaving"
                   />
-                </a>
+                </button>
                 <mat-button-toggle value="Returvarer">
                   <button matStepperNext mat-flat-button color="primary">
                     {{ 'return' | translate }}
@@ -380,11 +387,15 @@
               formControlName="departureFormCtrl"
             >
               <article class="truck-container">
-                <img
-                  class="truck-departure"
-                  src="../../assets/svg/truckLoading.svg"
-                  alt="truck arriving"
-                />
+                <mat-button-toggle value="Læsse">
+                  <img
+                    class="truck-departure"
+                    src="../../assets/svg/truckLoading.svg"
+                    alt="truck loading"
+                    matStepperNext
+                    (click)="startPrinting()"
+                  />
+                </mat-button-toggle>
                 <mat-button-toggle value="Læsse">
                   <button
                     mat-flat-button
@@ -398,13 +409,15 @@
               </article>
 
               <article class="truck-container">
-                <a routerLink="/departure">
+                <mat-button-toggle value="Læsse">
                   <img
                     class="truck-departure"
                     src="../../assets/svg/truckReverse.svg"
-                    alt="truck leaving"
+                    alt="truck reversing"
+                    matStepperNext
+                    (click)="startPrinting()"
                   />
-                </a>
+                </mat-button-toggle>
                 <mat-button-toggle value="Saml Lastet">
                   <button
                     mat-flat-button
