@@ -132,7 +132,6 @@ export class MainFormComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.formGroup.value);
     let data = Object.assign({}, this.formGroup.value);
     let timeCreated = new Date();
     const date = timeCreated.getDate();
