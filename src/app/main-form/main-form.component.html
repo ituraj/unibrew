@@ -246,14 +246,13 @@
 
               <article class="truck-container">
                 <mat-button-toggle value="Afgang">
-                  <button (click)="move(7)"
-                  >
-                  <img
-                    class="truck"
-                    src="../../assets/svg/truckLeaving.svg"
-                    alt="truck leaving"
-                  />
-                </button>
+                  <button (click)="move(7)">
+                    <img
+                      class="truck"
+                      src="../../assets/svg/truckLeaving.svg"
+                      alt="truck leaving"
+                    />
+                  </button>
                 </mat-button-toggle>
                 <mat-button-toggle value="Afgang">
                   <button mat-flat-button color="primary" (click)="move(7)">
@@ -280,13 +279,14 @@
               formControlName="arrivalTypeFormCtrl"
             >
               <article class="trailer-container">
-                <img
-                  class="trailer"
-                  src="../../assets/svg/trailerEmpty.svg"
-                  alt="truck arriving"
-                  value="Tøm Trailer"
-                  (click)="startPrinting()"
-                />
+                <button (click)="startPrinting()">
+                  <img
+                    class="trailer"
+                    src="../../assets/svg/trailerEmpty.svg"
+                    alt="trailer empty"
+                    value="Tøm Trailer"
+                  />
+                </button>
                 <mat-button-toggle value="Tøm Trailer">
                   <button
                     mat-flat-button
@@ -303,7 +303,7 @@
                   <img
                     class="trailer"
                     src="../../assets/svg/returningGoods.svg"
-                    alt="truck leaving"
+                    alt="returning goods"
                   />
                 </button>
                 <mat-button-toggle value="Returvarer">
@@ -335,7 +335,11 @@
                 />
                 <mat-form-field>
                   <mat-label>{{ 'palletsNumber' | translate }}</mat-label>
-                  <input matInput formControlName="sodasPalletFormCtrl" />
+                  <input
+                    matInput
+                    formControlName="sodasPalletFormCtrl"
+                    type="number"
+                  />
                 </mat-form-field>
               </div>
               <div class="pallet-container">
@@ -346,7 +350,11 @@
                 />
                 <mat-form-field>
                   <mat-label>{{ 'palletsNumber' | translate }}</mat-label>
-                  <input matInput formControlName="beerPalletFormCtrl" />
+                  <input
+                    matInput
+                    formControlName="beerPalletFormCtrl"
+                    type="number"
+                  />
                 </mat-form-field>
               </div>
               <div class="pallet-container">
@@ -357,7 +365,11 @@
                 />
                 <mat-form-field>
                   <mat-label>{{ 'palletsNumber' | translate }}</mat-label>
-                  <input matInput formControlName="kegsPalletFormCtrl" />
+                  <input
+                    matInput
+                    formControlName="kegsPalletFormCtrl"
+                    type="number"
+                  />
                 </mat-form-field>
               </div>
             </div>
