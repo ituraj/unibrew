@@ -3,6 +3,12 @@ import { DriverService } from 'src/app/shared/driver.service';
 import { Driver } from 'src/app/shared/driver.model';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { ToastrService } from 'ngx-toastr';
+import {
+  filter,
+  debounceTime,
+  distinctUntilChanged,
+  catchError
+} from 'rxjs/operators';
 
 @Component({
   selector: 'app-driver-list',

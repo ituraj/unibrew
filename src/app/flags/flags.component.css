@@ -25,13 +25,18 @@ footer.footer span {
   align-self: center;
 }
 
-/* Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (max-width: 768px) {
   .flags-container {
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+  .flags-grid {
     display: grid;
-    width: 100%;
-    min-height: calc(100vh - 96px);
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+  }
+
+  .flag {
+    max-width: 10rem;
   }
 }

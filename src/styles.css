@@ -26,10 +26,10 @@ html {
   width: 100%;
 }
 
-/* img {
+img {
   max-width: 100%;
   height: auto;
-} */
+}
 
 button,
 a:link,
@@ -238,6 +238,37 @@ div.mat-horizontal-stepper-header-container {
 button {
   font-size: 2rem;
   line-height: 1.5;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+  /* Typography */
+
+  h1,
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3,
+  h4,
+  h5 {
+    font-size: 1.2rem;
+  }
+
+  /* Icons */
+
+  .arrow {
+    font-size: 3rem;
+    height: 5rem;
+    width: 5rem;
+    margin: 0 1.25rem;
+    align-self: flex-start;
+  }
+
+  section.input-fix div.mat-form-field-infix {
+    min-width: auto;
+  }
 }
 
 /* Landscape */

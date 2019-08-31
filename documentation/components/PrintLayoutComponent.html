@@ -1,0 +1,952 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>unibrew documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">unibrew documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>PrintLayoutComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/print-layout/print-layout.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-print-layout</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./print-layout.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./print-layout.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#firestore">firestore</a>
+                            </li>
+                            <li>
+                                <a href="#list">list</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#service">service</a>
+                            </li>
+                            <li>
+                                <a href="#today">today</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(service: <a href="../injectables/MainFormService.html">MainFormService</a>, firestore: AngularFirestore)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/print-layout/print-layout.component.ts:13</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>service</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MainFormService.html" target="_self" >MainFormService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>firestore</td>
+                                                  
+                                                        <td>
+                                                                    <code>AngularFirestore</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">src/app/print-layout/print-layout.component.ts:19</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="firestore"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            firestore</b>
+                            <a href="#firestore"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>AngularFirestore</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/print-layout/print-layout.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="list"></a>
+                        <span class="name">
+                            <b>
+                            list</b>
+                            <a href="#list"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/MainFormItem.html" target="_self" >MainFormItem[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/print-layout/print-layout.component.ts:12</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="service"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            service</b>
+                            <a href="#service"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/MainFormService.html" target="_self" >MainFormService</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/print-layout/print-layout.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="today"></a>
+                        <span class="name">
+                            <b>
+                            today</b>
+                            <a href="#today"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>Date.now()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/print-layout/print-layout.component.ts:13</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { MainFormService } from &#x27;src/app/shared/main-form.service&#x27;;
+import { MainFormItem } from &#x27;src/app/shared/main-form.model&#x27;;
+import { AngularFirestore } from &#x27;@angular/fire/firestore&#x27;;
+
+@Component({
+  selector: &#x27;app-print-layout&#x27;,
+  templateUrl: &#x27;./print-layout.component.html&#x27;,
+  styleUrls: [&#x27;./print-layout.component.css&#x27;]
+})
+export class PrintLayoutComponent implements OnInit {
+  list: MainFormItem[];
+  today &#x3D; Date.now();
+  constructor(
+    public service: MainFormService,
+    public firestore: AngularFirestore
+  ) {}
+
+  ngOnInit() {
+    this.service.getMainForm().subscribe(actionArray &#x3D;&gt; {
+      this.list &#x3D; actionArray.map(item &#x3D;&gt; {
+        return {
+          id: item.payload.doc.id,
+          ...item.payload.doc.data()
+        } as MainFormItem;
+      });
+    });
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;section class&#x3D;&quot;section-mod&quot;&gt;
+  &lt;button class&#x3D;&quot;arrow back&quot; routerLink&#x3D;&quot;/&quot; alt&#x3D;&quot;previous step&quot;&gt;
+    &amp;#10132;
+  &lt;/button&gt;
+  &lt;article class&#x3D;&quot;section-simple&quot;&gt;
+    &lt;div
+      id&#x3D;&quot;print-section&quot;
+      class&#x3D;&quot;print-section&quot;
+      *ngFor&#x3D;&quot;let item of list | slice: -1&quot;
+    &gt;
+      &lt;section class&#x3D;&quot;print-grid&quot;&gt;
+        &lt;header class&#x3D;&quot;header-grid&quot;&gt;
+          &lt;div&gt;&lt;p class&#x3D;&quot;header&quot;&gt;Ordrehåndteringsseddel&lt;/p&gt;&lt;/div&gt;
+          &lt;div&gt;
+            &lt;p class&#x3D;&quot;header&quot;&gt;
+              Date:
+              &lt;span&gt; {{ item.dateString }}&lt;/span&gt;
+              &lt;span&gt; {{ item.timeString }}&lt;/span&gt;
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/header&gt;
+        &lt;section class&#x3D;&quot;section1&quot;&gt;
+          &lt;div class&#x3D;&quot;half&quot;&gt;
+            &lt;div class&#x3D;&quot;section1-left&quot;&gt;
+              &lt;p class&#x3D;&quot;section-title&quot;&gt;Udfyldes af chauffør&lt;/p&gt;
+              &lt;div class&#x3D;&quot;half&quot;&gt;
+                &lt;p class&#x3D;&quot;section-subtitle&quot;&gt;Transportnummer&lt;/p&gt;
+                &lt;p class&#x3D;&quot;fill&quot;&gt;
+                  {{ item.data.formArray[3].transportationNumberFormCtrl }}
+                &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;deliver-no-grid&quot;&gt;
+                &lt;p class&#x3D;&quot;section-subtitle&quot;&gt;Laveringsnummer&lt;/p&gt;
+                &lt;p class&#x3D;&quot;section-subtitle&quot;&gt;Antal&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;section1-right&quot;&gt;
+              &lt;p class&#x3D;&quot;section-title&quot;&gt;Udfyldes af bryggeri&lt;/p&gt;
+              &lt;div class&#x3D;&quot;section1-col-wraper&quot;&gt;
+                &lt;div class&#x3D;&quot;section-subtitle&quot;&gt;&lt;p&gt;Rampe&lt;/p&gt;&lt;/div&gt;
+                &lt;div class&#x3D;&quot;section-subtitle&quot;&gt;&lt;p&gt;Paller v Kontor&lt;/p&gt;&lt;/div&gt;
+                &lt;div class&#x3D;&quot;section-subtitle&quot;&gt;&lt;p&gt;Lager&lt;/p&gt;&lt;/div&gt;
+                &lt;div class&#x3D;&quot;section-subtitle&quot;&gt;&lt;p&gt;Port&lt;/p&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;empty-rows&quot;&gt;
+            &lt;div class&#x3D;&quot;empty-row&quot;&gt;
+              &lt;p&gt;1&lt;/p&gt;
+              &lt;p&gt;SOE373209&lt;/p&gt;
+              &lt;p&gt;5&lt;/p&gt;
+              &lt;p&gt;7A&lt;/p&gt;
+              &lt;p class&#x3D;&quot;fill&quot;&gt;
+                {{ item.data.formArray[6].beerPalletFormCtrl }}
+              &lt;/p&gt;
+              &lt;p&gt;sodavand paller&lt;/p&gt;
+              &lt;p&gt;7&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;empty-row&quot;&gt;
+              &lt;p&gt;2&lt;/p&gt;
+              &lt;p&gt;LPC269520&lt;/p&gt;
+              &lt;p&gt;8&lt;/p&gt;
+              &lt;p&gt;2&lt;/p&gt;
+              &lt;p class&#x3D;&quot;fill&quot;&gt;
+                {{ item.data.formArray[6].sodasPalletFormCtrl }}
+              &lt;/p&gt;
+              &lt;p&gt;ØL PALLER&lt;/p&gt;
+              &lt;p&gt;2B&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;empty-row&quot;&gt;
+              &lt;p&gt;3&lt;/p&gt;
+              &lt;p&gt;AEI402918&lt;/p&gt;
+              &lt;p&gt;3&lt;/p&gt;
+              &lt;p&gt;4&lt;/p&gt;
+              &lt;p class&#x3D;&quot;fill&quot;&gt;
+                {{ item.data.formArray[6].kegsPalletFormCtrl }}
+              &lt;/p&gt;
+              &lt;p&gt;TØNDE PALLER&lt;/p&gt;
+              &lt;p&gt;4B&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;empty-row&quot;&gt;
+              &lt;p&gt;4&lt;/p&gt;
+              &lt;p&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;empty-row&quot;&gt;
+              &lt;p&gt;5&lt;/p&gt;
+              &lt;p&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;empty-row&quot;&gt;
+              &lt;p&gt;6&lt;/p&gt;
+              &lt;p&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;empty-row&quot;&gt;
+              &lt;p&gt;&lt;/p&gt;
+              &lt;p&gt;Insp&amp; Leaset af:&lt;/p&gt;
+              &lt;p class&#x3D;&quot;fill&quot;&gt;{{ item.data.formArray[3].fullNameFormCtrl }}&lt;/p&gt;
+              &lt;p&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/section&gt;
+
+        &lt;section class&#x3D;&quot;section2&quot;&gt;
+          &lt;div class&#x3D;&quot;section2-left&quot;&gt;
+            &lt;div class&#x3D;&quot;section-subtitle&quot;&gt;Er traileren tjekket for skade?&lt;/div&gt;
+            &lt;div class&#x3D;&quot;half&quot;&gt;
+              &lt;p class&#x3D;&quot;section-subtitle&quot;&gt;Auto-nr&lt;/p&gt;
+              &lt;p class&#x3D;&quot;fill&quot;&gt;
+                {{ item.data.formArray[3].trailerNumberFormCtrl }}
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class&#x3D;&quot;section2-right&quot;&gt;
+            &lt;div class&#x3D;&quot;half right-fix&quot;&gt;
+              &lt;p class&#x3D;&quot;section-subtitle&quot;&gt;Ankomst | Afgang&lt;/p&gt;
+              &lt;p class&#x3D;&quot;fill&quot;&gt;
+                {{ item.data.formArray[4].arrivalDepartureFormCtrl }}
+              &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;wraper right-fix&quot;&gt;
+              &lt;p class&#x3D;&quot;section-subtitle&quot;&gt;Ved eksportleverencecer - Kryds Af&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;half&quot;&gt;
+              &lt;div class&#x3D;&quot;half&quot;&gt;
+                &lt;p class&#x3D;&quot;section-subtitle&quot;&gt;Trailer OK&lt;/p&gt;
+                &lt;p class&#x3D;&quot;fill&quot;&gt;
+                  {{ item.data.formArray[2].truckInspectionFormCtrl }}
+                &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;half right-fix&quot;&gt;
+                &lt;p class&#x3D;&quot;section-subtitle&quot;&gt;Skal Køres ud Først&lt;/p&gt;
+                &lt;p&gt;JA&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;half&quot;&gt;
+              &lt;div class&#x3D;&quot;half&quot;&gt;
+                &lt;p class&#x3D;&quot;section-subtitle&quot;&gt;Kan Sidelæse&lt;/p&gt;
+                &lt;p&gt;&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;half right-fix&quot;&gt;
+                &lt;p class&#x3D;&quot;section-subtitle&quot;&gt;På Vej Ud&lt;/p&gt;
+                &lt;p&gt;&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;half bottom-fix&quot;&gt;
+              &lt;div class&#x3D;&quot;half&quot;&gt;
+                &lt;p class&#x3D;&quot;section-subtitle&quot;&gt;Sikker- hedsko&lt;/p&gt;
+                &lt;p class&#x3D;&quot;fill&quot;&gt;{{ item.data.formArray[1].bootsFormCtrl }}&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;half right-fix&quot;&gt;
+                &lt;p class&#x3D;&quot;section-subtitle&quot;&gt;Star På Gulvet&lt;/p&gt;
+                &lt;p&gt;&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/section&gt;
+
+        &lt;section class&#x3D;&quot;section3&quot;&gt;
+          &lt;div class&#x3D;&quot;section3-left half-rows&quot;&gt;
+            &lt;div class&#x3D;&quot;half&quot;&gt;
+              &lt;div class&#x3D;&quot;section-subtitle&quot;&gt;&lt;p&gt;Firmanavn&lt;/p&gt;&lt;/div&gt;
+              &lt;div class&#x3D;&quot;alignment-fix&quot;&gt;
+                &lt;p class&#x3D;&quot;fill&quot;&gt;
+                  {{ item.data.formArray[3].companyNameFormCtrl }}
+                &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;section-subtitle&quot;&gt;&lt;p&gt;Diverse Sonstiges&lt;/p&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;section3-right half-rows&quot;&gt;
+            &lt;div class&#x3D;&quot;half-rows&quot;&gt;
+              &lt;div class&#x3D;&quot;half&quot;&gt;
+                &lt;p class&#x3D;&quot;section-subtitle&quot;&gt;Planlagt Afgang&lt;/p&gt;
+                &lt;p&gt;29/5/2019 10:10&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;half&quot;&gt;
+                &lt;p class&#x3D;&quot;section-subtitle&quot;&gt;Faktisk Afgang&lt;/p&gt;
+                &lt;p&gt;29/5/2019 12:45&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;half&quot;&gt;
+              &lt;div class&#x3D;&quot;queue-grid&quot;&gt;
+                &lt;p&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;queue-grid-mod&quot;&gt;
+                &lt;p class&#x3D;&quot;section-subtitle&quot;&gt;Kø Nummer&lt;/p&gt;
+                &lt;p&gt;&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/section&gt;
+      &lt;/section&gt;
+    &lt;/div&gt;
+
+    &lt;button
+      [printStyle]&#x3D;&quot;{ p: { color: &#x27;red&#x27; }, h2: { border: &#x27;solid 1px&#x27; } }&quot;
+      [useExistingCss]&#x3D;&quot;true&quot;
+      mat-flat-button
+      color&#x3D;&quot;primary&quot;
+      printSectionId&#x3D;&quot;print-section&quot;
+      ngxPrint
+      #myDiv
+    &gt;
+      PRINT
+    &lt;/button&gt;
+  &lt;/article&gt;
+&lt;/section&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./print-layout.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.print-grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-rows: 1fr 11fr 5fr 7fr;
+  border: 1px solid #474747;
+  background-color: #ffffff;
+}
+
+p {
+  font-size: 1rem;
+}
+.header-grid {
+  display: grid;
+  grid-template-columns: 6fr 2fr;
+}
+
+.header-grid,
+.section2,
+.section1-left,
+.section1-left p,
+.section1-right,
+.section1-right p.section-title,
+.empty-row p,
+.section2-left div:nth-child(1),
+.section2-right p,
+.section3-left div.half,
+.section3-right p,
+.queue-grid p,
+.queue-grid-mod p.section-subtitle {
+  border-bottom: 1px solid #474747;
+}
+
+.section1-left div.deliver-no-grid p,
+div.bottom-fix p,
+.queue-grid p:last-child,
+.queue-grid-mod p {
+  border-bottom: 0px;
+}
+
+.header-grid div:nth-child(1),
+.section1-left p:nth-child(odd),
+.section1-left,
+.section2-left,
+.section2-left div:nth-child(2) p:nth-child(1),
+.section2-right p,
+.section3-left,
+.section3-left div.half div:nth-child(1),
+.empty-row p,
+.section1-col-wraper div,
+.section3-right .half-rows .half p:first-child,
+.section3-right .bottom-fix div:first-child,
+.queue-grid p {
+  border-right: 1px solid #474747;
+}
+
+.section1-col-wraper div:nth-last-child(1),
+.section1-left p.section-title,
+.empty-row p:nth-last-child(1),
+.right-fix p:last-child {
+  border-right: 0px;
+}
+
+p {
+  text-align: center;
+}
+
+.half p,
+.alignment-fix,
+.empty-row p,
+.section-title,
+.section-subtitle,
+.fill,
+.header-grid div {
+  display: grid;
+  align-items: center;
+}
+
+p.header {
+  font-weight: 700;
+}
+.section1 {
+  display: grid;
+}
+.section1-left {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.section1-right {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.section1-col-wraper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+div.section1-col-wraper div {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.deliver-no-grid {
+  display: grid;
+  grid-template-columns: 6fr 2fr;
+}
+
+.empty-rows {
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+}
+.empty-row {
+  display: grid;
+  grid-template-columns: 1fr 5fr 2fr 2fr 2fr 2fr 2fr;
+}
+
+.empty-row p:nth-child(1) {
+  background-color: #d5d3d2;
+  text-align: center;
+  justify-items: center;
+}
+
+.section2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.half {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.half-rows {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.section2-left {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+.section2-right {
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+}
+
+.section2-right {
+  height: 100%;
+}
+
+.wraper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.section-title,
+.section-subtitle {
+  background-color: #d5d3d2;
+  text-align: center;
+  font-weight: 700;
+}
+
+.queue-grid {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+.queue-grid-mod {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+
+.fill {
+  color: #25ae88;
+  font-weight: 700;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><section class="section-mod">  <button class="arrow back" routerLink="/" alt="previous step">    &#10132;  </button>  <article class="section-simple">    <div      id="print-section"      class="print-section"      *ngFor="let item of list | slice: -1"    >      <section class="print-grid">        <header class="header-grid">          <div><p class="header">Ordrehåndteringsseddel</p></div>          <div>            <p class="header">              Date:              <span> {{ item.dateString }}</span>              <span> {{ item.timeString }}</span>            </p>          </div>        </header>        <section class="section1">          <div class="half">            <div class="section1-left">              <p class="section-title">Udfyldes af chauffør</p>              <div class="half">                <p class="section-subtitle">Transportnummer</p>                <p class="fill">                  {{ item.data.formArray[3].transportationNumberFormCtrl }}                </p>              </div>              <div class="deliver-no-grid">                <p class="section-subtitle">Laveringsnummer</p>                <p class="section-subtitle">Antal</p>              </div>            </div>            <div class="section1-right">              <p class="section-title">Udfyldes af bryggeri</p>              <div class="section1-col-wraper">                <div class="section-subtitle"><p>Rampe</p></div>                <div class="section-subtitle"><p>Paller v Kontor</p></div>                <div class="section-subtitle"><p>Lager</p></div>                <div class="section-subtitle"><p>Port</p></div>              </div>            </div>          </div>          <div class="empty-rows">            <div class="empty-row">              <p>1</p>              <p>SOE373209</p>              <p>5</p>              <p>7A</p>              <p class="fill">                {{ item.data.formArray[6].beerPalletFormCtrl }}              </p>              <p>sodavand paller</p>              <p>7</p>            </div>            <div class="empty-row">              <p>2</p>              <p>LPC269520</p>              <p>8</p>              <p>2</p>              <p class="fill">                {{ item.data.formArray[6].sodasPalletFormCtrl }}              </p>              <p>ØL PALLER</p>              <p>2B</p>            </div>            <div class="empty-row">              <p>3</p>              <p>AEI402918</p>              <p>3</p>              <p>4</p>              <p class="fill">                {{ item.data.formArray[6].kegsPalletFormCtrl }}              </p>              <p>TØNDE PALLER</p>              <p>4B</p>            </div>            <div class="empty-row">              <p>4</p>              <p></p>              <p></p>              <p></p>              <p></p>              <p></p>              <p></p>            </div>            <div class="empty-row">              <p>5</p>              <p></p>              <p></p>              <p></p>              <p></p>              <p></p>              <p></p>            </div>            <div class="empty-row">              <p>6</p>              <p></p>              <p></p>              <p></p>              <p></p>              <p></p>              <p></p>            </div>            <div class="empty-row">              <p></p>              <p>Insp& Leaset af:</p>              <p class="fill">{{ item.data.formArray[3].fullNameFormCtrl }}</p>              <p></p>              <p></p>              <p></p>              <p></p>            </div>          </div>        </section>        <section class="section2">          <div class="section2-left">            <div class="section-subtitle">Er traileren tjekket for skade?</div>            <div class="half">              <p class="section-subtitle">Auto-nr</p>              <p class="fill">                {{ item.data.formArray[3].trailerNumberFormCtrl }}              </p>            </div>          </div>          <div class="section2-right">            <div class="half right-fix">              <p class="section-subtitle">Ankomst | Afgang</p>              <p class="fill">                {{ item.data.formArray[4].arrivalDepartureFormCtrl }}              </p>            </div>            <div class="wraper right-fix">              <p class="section-subtitle">Ved eksportleverencecer - Kryds Af</p>            </div>            <div class="half">              <div class="half">                <p class="section-subtitle">Trailer OK</p>                <p class="fill">                  {{ item.data.formArray[2].truckInspectionFormCtrl }}                </p>              </div>              <div class="half right-fix">                <p class="section-subtitle">Skal Køres ud Først</p>                <p>JA</p>              </div>            </div>            <div class="half">              <div class="half">                <p class="section-subtitle">Kan Sidelæse</p>                <p></p>              </div>              <div class="half right-fix">                <p class="section-subtitle">På Vej Ud</p>                <p></p>              </div>            </div>            <div class="half bottom-fix">              <div class="half">                <p class="section-subtitle">Sikker- hedsko</p>                <p class="fill">{{ item.data.formArray[1].bootsFormCtrl }}</p>              </div>              <div class="half right-fix">                <p class="section-subtitle">Star På Gulvet</p>                <p></p>              </div>            </div>          </div>        </section>        <section class="section3">          <div class="section3-left half-rows">            <div class="half">              <div class="section-subtitle"><p>Firmanavn</p></div>              <div class="alignment-fix">                <p class="fill">                  {{ item.data.formArray[3].companyNameFormCtrl }}                </p>              </div>            </div>            <div class="section-subtitle"><p>Diverse Sonstiges</p></div>          </div>          <div class="section3-right half-rows">            <div class="half-rows">              <div class="half">                <p class="section-subtitle">Planlagt Afgang</p>                <p>29/5/2019 10:10</p>              </div>              <div class="half">                <p class="section-subtitle">Faktisk Afgang</p>                <p>29/5/2019 12:45</p>              </div>            </div>            <div class="half">              <div class="queue-grid">                <p></p>                <p></p>                <p></p>                <p></p>              </div>              <div class="queue-grid-mod">                <p class="section-subtitle">Kø Nummer</p>                <p></p>              </div>            </div>          </div>        </section>      </section>    </div>    <button      [printStyle]="{ p: { color: \'red\' }, h2: { border: \'solid 1px\' } }"      [useExistingCss]="true"      mat-flat-button      color="primary"      printSectionId="print-section"      ngxPrint      #myDiv    >      PRINT    </button>  </article></section></div>'
+    var COMPONENTS = [{'name': 'AdminComponent', 'selector': 'app-admin'},{'name': 'AdminLoginComponent', 'selector': 'app-admin-login'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DragDropComponent', 'selector': 'app-drag-drop'},{'name': 'DriverComponent', 'selector': 'app-driver'},{'name': 'DriverListComponent', 'selector': 'app-driver-list'},{'name': 'FlagsComponent', 'selector': 'app-flags'},{'name': 'MainFormComponent', 'selector': 'app-main-form'},{'name': 'PrintLayoutComponent', 'selector': 'app-print-layout'},{'name': 'QuizComponent', 'selector': 'app-quiz'},{'name': 'QuizIntroComponent', 'selector': 'app-quiz-intro'},{'name': 'ResultComponent', 'selector': 'app-result'},{'name': 'SecondaryFormComponent', 'selector': 'app-secondary-form'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'PrintLayoutComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'PrintLayoutComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

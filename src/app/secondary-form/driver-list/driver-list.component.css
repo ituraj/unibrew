@@ -75,3 +75,9 @@ td:nth-child(7) i.material-icons {
     font-size: 3rem;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .table {
+    display: none;
+  }
+}

@@ -123,3 +123,36 @@
 .article-departure {
   justify-items: stretch;
 }
+
+/* ------------------- Media Queries ----------------*/
+
+@media only screen and (max-width: 768px) {
+  .safety-items {
+    display: flex;
+    flex-direction: column;
+    margin: 0 -5rem;
+  }
+  .item-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .worker,
+  .inspected-truck,
+  .warehouse-img {
+    max-height: 12rem;
+  }
+
+  .trailer,
+  .pallet {
+    max-height: 8rem;
+  }
+
+  .pallets-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-departure {
+    margin: 0 -8rem;
+  }
+}
